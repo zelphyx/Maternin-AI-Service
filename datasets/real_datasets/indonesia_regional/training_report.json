@@ -1,0 +1,47 @@
+{
+  "dataset": "DHS_Indonesia_Regional_Panel",
+  "n_records": 96,
+  "n_provinces": 24,
+  "year_range": [
+    2002,
+    2017
+  ],
+  "features": [
+    "anc4_pct",
+    "facility_delivery_pct",
+    "sba_pct",
+    "urban_share_pct",
+    "low_education_pct",
+    "risky_maternal_age_pct",
+    "birth_interval_short_pct",
+    "avg_parity",
+    "full_immun_pct"
+  ],
+  "target": "lbw_bucket (proxy for maternal health outcome)",
+  "results": {
+    "logistic_regression": {
+      "cv_acc_mean": 0.375,
+      "cv_acc_std": 0.095,
+      "cv_f1_mean": 0.3926,
+      "cv_f1_std": 0.0868
+    },
+    "xgboost": {
+      "cv_acc_mean": 0.4833,
+      "cv_acc_std": 0.1307,
+      "cv_f1_mean": 0.4723,
+      "cv_f1_std": 0.1015
+    },
+    "random_forest": {
+      "cv_acc_mean": 0.425,
+      "cv_acc_std": 0.1099,
+      "cv_f1_mean": 0.4535,
+      "cv_f1_std": 0.1104
+    }
+  },
+  "important_disclaimers": [
+    "Aggregated province-year data, NOT individual patient data",
+    "Cannot be used for clinical per-patient prediction",
+    "Useful only for regional health policy analysis",
+    "Production model still uses UCI Bangladesh individual data"
+  ]
+}
