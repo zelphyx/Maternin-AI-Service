@@ -1,0 +1,16 @@
+{
+  "model_name": "preeclampsia_lr_v1",
+  "model_type": "LogisticRegression",
+  "improvements_applied": [
+    "Feature engineering",
+    "SMOTE"
+  ],
+  "metrics": {
+    "test_accuracy": 0.7734,
+    "test_f1": 0.623
+  },
+  "improvement_vs_baseline": {
+    "test_acc_before": 0.7044,
+    "test_acc_after": 0.7734
+  }
+}

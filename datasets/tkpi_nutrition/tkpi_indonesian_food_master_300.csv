@@ -1,0 +1,313 @@
+nama_bahan,porsi_standar,energi_kcal,protein_g,lemak_g,karbohidrat_g,zat_besi_mg,kalsium_mg,kategori,catatan_ibu_hamil
+Nasi Putih,1 centong (100g),130,2.4,0.2,28.6,0.2,25,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Putih (Porsi Kecil),1/2 porsi,65.0,1.2,0.1,14.3,0.1,12.5,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Putih (Porsi Besar),1.5 porsi,195.0,3.6,0.3,42.9,0.3,37.5,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Putih (1 Piring / Mangkok),1 piring,156.0,2.9,0.2,34.3,0.2,30.0,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Putih Olahan Spesial,1 porsi spesial,169.0,3.1,0.3,37.2,0.3,32.5,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Putih Porsi Cemilan,1 potong kecil,39.0,0.7,0.1,8.6,0.1,7.5,Makanan Pokok,"Aman, konsumsi seimbang"
+Nasi Merah,1 centong (100g),110,2.6,0.9,23.5,0.8,10,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Merah (Porsi Kecil),1/2 porsi,55.0,1.3,0.5,11.8,0.4,5.0,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Merah (Porsi Besar),1.5 porsi,165.0,3.9,1.4,35.2,1.2,15.0,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Merah (1 Piring / Mangkok),1 piring,132.0,3.1,1.1,28.2,1.0,12.0,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Merah Olahan Spesial,1 porsi spesial,143.0,3.4,1.2,30.6,1.0,13.0,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Merah Porsi Cemilan,1 potong kecil,33.0,0.8,0.3,7.0,0.2,3.0,Makanan Pokok,"Sangat bagus, tinggi serat & cegah diabetes gestasional"
+Nasi Hitam,1 centong (100g),105,2.8,0.7,22.0,1.2,12,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Hitam (Porsi Kecil),1/2 porsi,52.5,1.4,0.3,11.0,0.6,6.0,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Hitam (Porsi Besar),1.5 porsi,157.5,4.2,1.0,33.0,1.8,18.0,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Hitam (1 Piring / Mangkok),1 piring,126.0,3.4,0.8,26.4,1.4,14.4,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Hitam Olahan Spesial,1 porsi spesial,136.5,3.6,0.9,28.6,1.6,15.6,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Hitam Porsi Cemilan,1 potong kecil,31.5,0.8,0.2,6.6,0.4,3.6,Makanan Pokok,Tinggi antioksidan & zat besi
+Nasi Jagung,1 porsi (100g),120,2.2,0.5,26.0,0.6,18,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Jagung (Porsi Kecil),1/2 porsi,60.0,1.1,0.2,13.0,0.3,9.0,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Jagung (Porsi Besar),1.5 porsi,180.0,3.3,0.8,39.0,0.9,27.0,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Jagung (1 Piring / Mangkok),1 piring,144.0,2.6,0.6,31.2,0.7,21.6,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Jagung Olahan Spesial,1 porsi spesial,156.0,2.9,0.7,33.8,0.8,23.4,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Jagung Porsi Cemilan,1 potong kecil,36.0,0.7,0.1,7.8,0.2,5.4,Makanan Pokok,Bagus untuk variasi karbohidrat
+Nasi Uduk,1 porsi (150g),260,4.5,9.2,38.0,0.6,30,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Uduk (Porsi Kecil),1/2 porsi,130.0,2.2,4.6,19.0,0.3,15.0,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Uduk (Porsi Besar),1.5 porsi,390.0,6.8,13.8,57.0,0.9,45.0,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Uduk (1 Piring / Mangkok),1 piring,312.0,5.4,11.0,45.6,0.7,36.0,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Uduk Olahan Spesial,1 porsi spesial,338.0,5.9,12.0,49.4,0.8,39.0,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Uduk Porsi Cemilan,1 potong kecil,78.0,1.3,2.8,11.4,0.2,9.0,Makanan Pokok,Kalori lebih tinggi karena santan
+Nasi Kuning,1 porsi (150g),250,4.2,8.5,37.0,0.7,28,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Kuning (Porsi Kecil),1/2 porsi,125.0,2.1,4.2,18.5,0.3,14.0,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Kuning (Porsi Besar),1.5 porsi,375.0,6.3,12.8,55.5,1.0,42.0,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Kuning (1 Piring / Mangkok),1 piring,300.0,5.0,10.2,44.4,0.8,33.6,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Kuning Olahan Spesial,1 porsi spesial,325.0,5.5,11.1,48.1,0.9,36.4,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Kuning Porsi Cemilan,1 potong kecil,75.0,1.3,2.5,11.1,0.2,8.4,Makanan Pokok,Kunyit baik sebagai antiinflamasi alami
+Nasi Liwet Sunda,1 porsi (150g),245,4.8,8.0,36.0,0.8,32,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Nasi Liwet Sunda (Porsi Kecil),1/2 porsi,122.5,2.4,4.0,18.0,0.4,16.0,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Nasi Liwet Sunda (Porsi Besar),1.5 porsi,367.5,7.2,12.0,54.0,1.2,48.0,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Nasi Liwet Sunda (1 Piring / Mangkok),1 piring,294.0,5.8,9.6,43.2,1.0,38.4,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Nasi Liwet Sunda Olahan Spesial,1 porsi spesial,318.5,6.2,10.4,46.8,1.0,41.6,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Nasi Liwet Sunda Porsi Cemilan,1 potong kecil,73.5,1.4,2.4,10.8,0.2,9.6,Makanan Pokok,"Gurih, perhatikan porsi santan"
+Bubur Ayam,1 mangkuk (200g),210,7.0,6.0,32.0,0.9,40,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Ayam (Porsi Kecil),1/2 porsi,105.0,3.5,3.0,16.0,0.5,20.0,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Ayam (Porsi Besar),1.5 porsi,315.0,10.5,9.0,48.0,1.4,60.0,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Ayam (1 Piring / Mangkok),1 piring,252.0,8.4,7.2,38.4,1.1,48.0,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Ayam Olahan Spesial,1 porsi spesial,273.0,9.1,7.8,41.6,1.2,52.0,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Ayam Porsi Cemilan,1 potong kecil,63.0,2.1,1.8,9.6,0.3,12.0,Makanan Pokok,Sangat baik saat mual trimester 1
+Bubur Manado (Tinutuan),1 mangkuk (200g),160,4.5,2.0,31.0,1.8,85,Makanan Pokok,Tinggi serat & aneka sayuran
+Bubur Manado (Tinutuan) (Porsi Kecil),1/2 porsi,80.0,2.2,1.0,15.5,0.9,42.5,Makanan Pokok,Tinggi serat & aneka sayuran
+Bubur Manado (Tinutuan) (Porsi Besar),1.5 porsi,240.0,6.8,3.0,46.5,2.7,127.5,Makanan Pokok,Tinggi serat & aneka sayuran
+Bubur Manado (Tinutuan) (1 Piring / Mangkok),1 piring,192.0,5.4,2.4,37.2,2.2,102.0,Makanan Pokok,Tinggi serat & aneka sayuran
+Bubur Manado (Tinutuan) Olahan Spesial,1 porsi spesial,208.0,5.9,2.6,40.3,2.3,110.5,Makanan Pokok,Tinggi serat & aneka sayuran
+Bubur Manado (Tinutuan) Porsi Cemilan,1 potong kecil,48.0,1.3,0.6,9.3,0.5,25.5,Makanan Pokok,Tinggi serat & aneka sayuran
+Singkong Rebus,1 potong (100g),146,1.2,0.3,34.0,0.7,33,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Singkong Rebus (Porsi Kecil),1/2 porsi,73.0,0.6,0.1,17.0,0.3,16.5,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Singkong Rebus (Porsi Besar),1.5 porsi,219.0,1.8,0.4,51.0,1.0,49.5,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Singkong Rebus (1 Piring / Mangkok),1 piring,175.2,1.4,0.4,40.8,0.8,39.6,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Singkong Rebus Olahan Spesial,1 porsi spesial,189.8,1.6,0.4,44.2,0.9,42.9,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Singkong Rebus Porsi Cemilan,1 potong kecil,43.8,0.4,0.1,10.2,0.2,9.9,Makanan Pokok,Karbohidrat kompleks bebas gluten
+Ubi Jalar Rebus,1 buah (100g),119,1.8,0.4,27.5,0.8,30,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Ubi Jalar Rebus (Porsi Kecil),1/2 porsi,59.5,0.9,0.2,13.8,0.4,15.0,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Ubi Jalar Rebus (Porsi Besar),1.5 porsi,178.5,2.7,0.6,41.2,1.2,45.0,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Ubi Jalar Rebus (1 Piring / Mangkok),1 piring,142.8,2.2,0.5,33.0,1.0,36.0,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Ubi Jalar Rebus Olahan Spesial,1 porsi spesial,154.7,2.3,0.5,35.8,1.0,39.0,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Ubi Jalar Rebus Porsi Cemilan,1 potong kecil,35.7,0.5,0.1,8.2,0.2,9.0,Makanan Pokok,Kaya Vitamin A (Beta Karoten)
+Kentang Rebus,1 buah (100g),87,1.9,0.1,20.0,0.7,11,Makanan Pokok,Ringan di lambung saat mual
+Kentang Rebus (Porsi Kecil),1/2 porsi,43.5,0.9,0.1,10.0,0.3,5.5,Makanan Pokok,Ringan di lambung saat mual
+Kentang Rebus (Porsi Besar),1.5 porsi,130.5,2.8,0.2,30.0,1.0,16.5,Makanan Pokok,Ringan di lambung saat mual
+Kentang Rebus (1 Piring / Mangkok),1 piring,104.4,2.3,0.1,24.0,0.8,13.2,Makanan Pokok,Ringan di lambung saat mual
+Kentang Rebus Olahan Spesial,1 porsi spesial,113.1,2.5,0.1,26.0,0.9,14.3,Makanan Pokok,Ringan di lambung saat mual
+Kentang Rebus Porsi Cemilan,1 potong kecil,26.1,0.6,0.0,6.0,0.2,3.3,Makanan Pokok,Ringan di lambung saat mual
+Daging Sapi Rendang,1 potong (60g),195,14.5,12.0,3.5,2.1,18,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Rendang (Porsi Kecil),1/2 porsi,97.5,7.2,6.0,1.8,1.1,9.0,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Rendang (Porsi Besar),1.5 porsi,292.5,21.8,18.0,5.2,3.2,27.0,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Rendang (1 Piring / Mangkok),1 piring,234.0,17.4,14.4,4.2,2.5,21.6,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Rendang Olahan Spesial,1 porsi spesial,253.5,18.9,15.6,4.5,2.7,23.4,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Rendang Porsi Cemilan,1 potong kecil,58.5,4.3,3.6,1.1,0.6,5.4,Lauk Pauk,Tinggi zat besi Heme pencegah anemia
+Daging Sapi Semur,1 potong (60g),140,13.0,6.5,5.0,1.8,15,Lauk Pauk,Kaya zat besi & protein
+Daging Sapi Semur (Porsi Kecil),1/2 porsi,70.0,6.5,3.2,2.5,0.9,7.5,Lauk Pauk,Kaya zat besi & protein
+Daging Sapi Semur (Porsi Besar),1.5 porsi,210.0,19.5,9.8,7.5,2.7,22.5,Lauk Pauk,Kaya zat besi & protein
+Daging Sapi Semur (1 Piring / Mangkok),1 piring,168.0,15.6,7.8,6.0,2.2,18.0,Lauk Pauk,Kaya zat besi & protein
+Daging Sapi Semur Olahan Spesial,1 porsi spesial,182.0,16.9,8.5,6.5,2.3,19.5,Lauk Pauk,Kaya zat besi & protein
+Daging Sapi Semur Porsi Cemilan,1 potong kecil,42.0,3.9,1.9,1.5,0.5,4.5,Lauk Pauk,Kaya zat besi & protein
+Empal Daging Sapi,1 potong (50g),165,13.5,10.0,2.0,1.7,16,Lauk Pauk,Protein tinggi
+Empal Daging Sapi (Porsi Kecil),1/2 porsi,82.5,6.8,5.0,1.0,0.8,8.0,Lauk Pauk,Protein tinggi
+Empal Daging Sapi (Porsi Besar),1.5 porsi,247.5,20.2,15.0,3.0,2.5,24.0,Lauk Pauk,Protein tinggi
+Empal Daging Sapi (1 Piring / Mangkok),1 piring,198.0,16.2,12.0,2.4,2.0,19.2,Lauk Pauk,Protein tinggi
+Empal Daging Sapi Olahan Spesial,1 porsi spesial,214.5,17.6,13.0,2.6,2.2,20.8,Lauk Pauk,Protein tinggi
+Empal Daging Sapi Porsi Cemilan,1 potong kecil,49.5,4.0,3.0,0.6,0.5,4.8,Lauk Pauk,Protein tinggi
+Soto Daging Sapi,1 mangkuk (200g),220,15.0,14.0,8.0,2.0,35,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Soto Daging Sapi (Porsi Kecil),1/2 porsi,110.0,7.5,7.0,4.0,1.0,17.5,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Soto Daging Sapi (Porsi Besar),1.5 porsi,330.0,22.5,21.0,12.0,3.0,52.5,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Soto Daging Sapi (1 Piring / Mangkok),1 piring,264.0,18.0,16.8,9.6,2.4,42.0,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Soto Daging Sapi Olahan Spesial,1 porsi spesial,286.0,19.5,18.2,10.4,2.6,45.5,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Soto Daging Sapi Porsi Cemilan,1 potong kecil,66.0,4.5,4.2,2.4,0.6,10.5,Lauk Pauk,"Hangat, protein & cairan tinggi"
+Ayam Goreng Dada,1 potong (80g),190,22.0,9.5,1.0,1.1,15,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Goreng Dada (Porsi Kecil),1/2 porsi,95.0,11.0,4.8,0.5,0.6,7.5,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Goreng Dada (Porsi Besar),1.5 porsi,285.0,33.0,14.2,1.5,1.7,22.5,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Goreng Dada (1 Piring / Mangkok),1 piring,228.0,26.4,11.4,1.2,1.3,18.0,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Goreng Dada Olahan Spesial,1 porsi spesial,247.0,28.6,12.3,1.3,1.4,19.5,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Goreng Dada Porsi Cemilan,1 potong kecil,57.0,6.6,2.9,0.3,0.3,4.5,Lauk Pauk,Protein pembentuk jaringan janin
+Ayam Ungkep Rebus,1 potong (80g),150,21.0,5.0,0.5,1.0,14,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Ungkep Rebus (Porsi Kecil),1/2 porsi,75.0,10.5,2.5,0.2,0.5,7.0,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Ungkep Rebus (Porsi Besar),1.5 porsi,225.0,31.5,7.5,0.8,1.5,21.0,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Ungkep Rebus (1 Piring / Mangkok),1 piring,180.0,25.2,6.0,0.6,1.2,16.8,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Ungkep Rebus Olahan Spesial,1 porsi spesial,195.0,27.3,6.5,0.7,1.3,18.2,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Ungkep Rebus Porsi Cemilan,1 potong kecil,45.0,6.3,1.5,0.1,0.3,4.2,Lauk Pauk,"Rendah lemak, protein murni"
+Ayam Bakar kecap,1 potong (80g),170,21.5,7.0,4.0,1.1,16,Lauk Pauk,Pastikan matang sempurna
+Ayam Bakar kecap (Porsi Kecil),1/2 porsi,85.0,10.8,3.5,2.0,0.6,8.0,Lauk Pauk,Pastikan matang sempurna
+Ayam Bakar kecap (Porsi Besar),1.5 porsi,255.0,32.2,10.5,6.0,1.7,24.0,Lauk Pauk,Pastikan matang sempurna
+Ayam Bakar kecap (1 Piring / Mangkok),1 piring,204.0,25.8,8.4,4.8,1.3,19.2,Lauk Pauk,Pastikan matang sempurna
+Ayam Bakar kecap Olahan Spesial,1 porsi spesial,221.0,27.9,9.1,5.2,1.4,20.8,Lauk Pauk,Pastikan matang sempurna
+Ayam Bakar kecap Porsi Cemilan,1 potong kecil,51.0,6.5,2.1,1.2,0.3,4.8,Lauk Pauk,Pastikan matang sempurna
+Opor Ayam,1 potong (80g),210,19.0,13.0,3.0,1.2,22,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Opor Ayam (Porsi Kecil),1/2 porsi,105.0,9.5,6.5,1.5,0.6,11.0,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Opor Ayam (Porsi Besar),1.5 porsi,315.0,28.5,19.5,4.5,1.8,33.0,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Opor Ayam (1 Piring / Mangkok),1 piring,252.0,22.8,15.6,3.6,1.4,26.4,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Opor Ayam Olahan Spesial,1 porsi spesial,273.0,24.7,16.9,3.9,1.6,28.6,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Opor Ayam Porsi Cemilan,1 potong kecil,63.0,5.7,3.9,0.9,0.4,6.6,Lauk Pauk,Batasi konsumsi kuah santan berlebih
+Telur Ayam Rebus,1 butir (50g),77,6.3,5.3,0.6,1.2,25,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Ayam Rebus (Porsi Kecil),1/2 porsi,38.5,3.1,2.6,0.3,0.6,12.5,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Ayam Rebus (Porsi Besar),1.5 porsi,115.5,9.4,7.9,0.9,1.8,37.5,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Ayam Rebus (1 Piring / Mangkok),1 piring,92.4,7.6,6.4,0.7,1.4,30.0,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Ayam Rebus Olahan Spesial,1 porsi spesial,100.1,8.2,6.9,0.8,1.6,32.5,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Ayam Rebus Porsi Cemilan,1 potong kecil,23.1,1.9,1.6,0.2,0.4,7.5,Lauk Pauk,Kaya Kolin untuk perkembangan otak janin. Wajib matang!
+Telur Dadar Jawa,1 butir (55g),110,6.5,8.8,0.4,1.3,27,Lauk Pauk,Sumber protein praktis
+Telur Dadar Jawa (Porsi Kecil),1/2 porsi,55.0,3.2,4.4,0.2,0.7,13.5,Lauk Pauk,Sumber protein praktis
+Telur Dadar Jawa (Porsi Besar),1.5 porsi,165.0,9.8,13.2,0.6,2.0,40.5,Lauk Pauk,Sumber protein praktis
+Telur Dadar Jawa (1 Piring / Mangkok),1 piring,132.0,7.8,10.6,0.5,1.6,32.4,Lauk Pauk,Sumber protein praktis
+Telur Dadar Jawa Olahan Spesial,1 porsi spesial,143.0,8.5,11.4,0.5,1.7,35.1,Lauk Pauk,Sumber protein praktis
+Telur Dadar Jawa Porsi Cemilan,1 potong kecil,33.0,1.9,2.6,0.1,0.4,8.1,Lauk Pauk,Sumber protein praktis
+Telur Balado,1 butir (60g),125,6.8,9.5,2.5,1.4,28,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Telur Balado (Porsi Kecil),1/2 porsi,62.5,3.4,4.8,1.2,0.7,14.0,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Telur Balado (Porsi Besar),1.5 porsi,187.5,10.2,14.2,3.8,2.1,42.0,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Telur Balado (1 Piring / Mangkok),1 piring,150.0,8.2,11.4,3.0,1.7,33.6,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Telur Balado Olahan Spesial,1 porsi spesial,162.5,8.8,12.3,3.2,1.8,36.4,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Telur Balado Porsi Cemilan,1 potong kecil,37.5,2.0,2.9,0.8,0.4,8.4,Lauk Pauk,"Protein baik, sesuaikan tingkat pedas"
+Ikan Kembung Goreng,1 ekor (75g),160,16.5,9.0,0.0,1.2,110,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Kembung Goreng (Porsi Kecil),1/2 porsi,80.0,8.2,4.5,0.0,0.6,55.0,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Kembung Goreng (Porsi Besar),1.5 porsi,240.0,24.8,13.5,0.0,1.8,165.0,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Kembung Goreng (1 Piring / Mangkok),1 piring,192.0,19.8,10.8,0.0,1.4,132.0,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Kembung Goreng Olahan Spesial,1 porsi spesial,208.0,21.4,11.7,0.0,1.6,143.0,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Kembung Goreng Porsi Cemilan,1 potong kecil,48.0,5.0,2.7,0.0,0.4,33.0,Lauk Pauk,Kaya DHA & Omega-3 alami lokal
+Ikan Pepes Bumbu Kuning,1 potong (100g),130,18.0,5.0,2.0,1.4,95,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Pepes Bumbu Kuning (Porsi Kecil),1/2 porsi,65.0,9.0,2.5,1.0,0.7,47.5,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Pepes Bumbu Kuning (Porsi Besar),1.5 porsi,195.0,27.0,7.5,3.0,2.1,142.5,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Pepes Bumbu Kuning (1 Piring / Mangkok),1 piring,156.0,21.6,6.0,2.4,1.7,114.0,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Pepes Bumbu Kuning Olahan Spesial,1 porsi spesial,169.0,23.4,6.5,2.6,1.8,123.5,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Pepes Bumbu Kuning Porsi Cemilan,1 potong kecil,39.0,5.4,1.5,0.6,0.4,28.5,Lauk Pauk,"Sangat sehat, tinggi kalsium & protein"
+Ikan Bandeng Presto,1 potong (75g),175,17.0,10.0,1.0,1.5,180,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Bandeng Presto (Porsi Kecil),1/2 porsi,87.5,8.5,5.0,0.5,0.8,90.0,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Bandeng Presto (Porsi Besar),1.5 porsi,262.5,25.5,15.0,1.5,2.2,270.0,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Bandeng Presto (1 Piring / Mangkok),1 piring,210.0,20.4,12.0,1.2,1.8,216.0,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Bandeng Presto Olahan Spesial,1 porsi spesial,227.5,22.1,13.0,1.3,2.0,234.0,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Bandeng Presto Porsi Cemilan,1 potong kecil,52.5,5.1,3.0,0.3,0.4,54.0,Lauk Pauk,"Duri lunak, sangat tinggi kalsium"
+Ikan Lele Goreng,1 ekor (80g),175,14.0,11.0,2.0,0.9,35,Lauk Pauk,Protein terjangkau
+Ikan Lele Goreng (Porsi Kecil),1/2 porsi,87.5,7.0,5.5,1.0,0.5,17.5,Lauk Pauk,Protein terjangkau
+Ikan Lele Goreng (Porsi Besar),1.5 porsi,262.5,21.0,16.5,3.0,1.4,52.5,Lauk Pauk,Protein terjangkau
+Ikan Lele Goreng (1 Piring / Mangkok),1 piring,210.0,16.8,13.2,2.4,1.1,42.0,Lauk Pauk,Protein terjangkau
+Ikan Lele Goreng Olahan Spesial,1 porsi spesial,227.5,18.2,14.3,2.6,1.2,45.5,Lauk Pauk,Protein terjangkau
+Ikan Lele Goreng Porsi Cemilan,1 potong kecil,52.5,4.2,3.3,0.6,0.3,10.5,Lauk Pauk,Protein terjangkau
+Hati Sapi Tumis,1 potong (50g),110,14.0,4.0,2.5,6.5,8,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Hati Sapi Tumis (Porsi Kecil),1/2 porsi,55.0,7.0,2.0,1.2,3.2,4.0,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Hati Sapi Tumis (Porsi Besar),1.5 porsi,165.0,21.0,6.0,3.8,9.8,12.0,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Hati Sapi Tumis (1 Piring / Mangkok),1 piring,132.0,16.8,4.8,3.0,7.8,9.6,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Hati Sapi Tumis Olahan Spesial,1 porsi spesial,143.0,18.2,5.2,3.2,8.5,10.4,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Hati Sapi Tumis Porsi Cemilan,1 potong kecil,33.0,4.2,1.2,0.8,1.9,2.4,Lauk Pauk,Super tinggi Zat Besi & Vit A. Konsumsi secukupnya (max 1x/minggu)
+Tempe Goreng Mendoan,1 potong (50g),135,6.0,9.5,7.0,1.4,50,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Goreng Mendoan (Porsi Kecil),1/2 porsi,67.5,3.0,4.8,3.5,0.7,25.0,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Goreng Mendoan (Porsi Besar),1.5 porsi,202.5,9.0,14.2,10.5,2.1,75.0,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Goreng Mendoan (1 Piring / Mangkok),1 piring,162.0,7.2,11.4,8.4,1.7,60.0,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Goreng Mendoan Olahan Spesial,1 porsi spesial,175.5,7.8,12.3,9.1,1.8,65.0,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Goreng Mendoan Porsi Cemilan,1 potong kecil,40.5,1.8,2.9,2.1,0.4,15.0,Lauk Pauk Nabati,Tinggi folat alami
+Tempe Bacem,1 potong (50g),110,7.5,4.0,11.0,1.6,60,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tempe Bacem (Porsi Kecil),1/2 porsi,55.0,3.8,2.0,5.5,0.8,30.0,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tempe Bacem (Porsi Besar),1.5 porsi,165.0,11.2,6.0,16.5,2.4,90.0,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tempe Bacem (1 Piring / Mangkok),1 piring,132.0,9.0,4.8,13.2,1.9,72.0,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tempe Bacem Olahan Spesial,1 porsi spesial,143.0,9.8,5.2,14.3,2.1,78.0,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tempe Bacem Porsi Cemilan,1 potong kecil,33.0,2.2,1.2,3.3,0.5,18.0,Lauk Pauk Nabati,Protein fermentasi baik untuk usus
+Tahu Goreng Kuning,1 potong (50g),58,4.1,4.2,1.4,1.7,40,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Goreng Kuning (Porsi Kecil),1/2 porsi,29.0,2.0,2.1,0.7,0.8,20.0,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Goreng Kuning (Porsi Besar),1.5 porsi,87.0,6.1,6.3,2.1,2.5,60.0,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Goreng Kuning (1 Piring / Mangkok),1 piring,69.6,4.9,5.0,1.7,2.0,48.0,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Goreng Kuning Olahan Spesial,1 porsi spesial,75.4,5.3,5.5,1.8,2.2,52.0,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Goreng Kuning Porsi Cemilan,1 potong kecil,17.4,1.2,1.3,0.4,0.5,12.0,Lauk Pauk Nabati,Kalsium nabati tinggi
+Tahu Bacem,1 potong (50g),75,4.8,2.5,8.0,1.8,48,Lauk Pauk Nabati,Ringan di lambung
+Tahu Bacem (Porsi Kecil),1/2 porsi,37.5,2.4,1.2,4.0,0.9,24.0,Lauk Pauk Nabati,Ringan di lambung
+Tahu Bacem (Porsi Besar),1.5 porsi,112.5,7.2,3.8,12.0,2.7,72.0,Lauk Pauk Nabati,Ringan di lambung
+Tahu Bacem (1 Piring / Mangkok),1 piring,90.0,5.8,3.0,9.6,2.2,57.6,Lauk Pauk Nabati,Ringan di lambung
+Tahu Bacem Olahan Spesial,1 porsi spesial,97.5,6.2,3.2,10.4,2.3,62.4,Lauk Pauk Nabati,Ringan di lambung
+Tahu Bacem Porsi Cemilan,1 potong kecil,22.5,1.4,0.8,2.4,0.5,14.4,Lauk Pauk Nabati,Ringan di lambung
+Kacang Hijau Rebus,1 mangkuk (150g),160,10.0,1.0,28.0,2.5,65,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Hijau Rebus (Porsi Kecil),1/2 porsi,80.0,5.0,0.5,14.0,1.2,32.5,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Hijau Rebus (Porsi Besar),1.5 porsi,240.0,15.0,1.5,42.0,3.8,97.5,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Hijau Rebus (1 Piring / Mangkok),1 piring,192.0,12.0,1.2,33.6,3.0,78.0,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Hijau Rebus Olahan Spesial,1 porsi spesial,208.0,13.0,1.3,36.4,3.2,84.5,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Hijau Rebus Porsi Cemilan,1 potong kecil,48.0,3.0,0.3,8.4,0.8,19.5,Lauk Pauk Nabati,Sangat bagus untuk asam folat & produksi ASI
+Kacang Tanah Rebus,1 genggam (40g),165,7.0,13.0,6.0,1.1,25,Lauk Pauk Nabati,Kaya vitamin E & protein
+Kacang Tanah Rebus (Porsi Kecil),1/2 porsi,82.5,3.5,6.5,3.0,0.6,12.5,Lauk Pauk Nabati,Kaya vitamin E & protein
+Kacang Tanah Rebus (Porsi Besar),1.5 porsi,247.5,10.5,19.5,9.0,1.7,37.5,Lauk Pauk Nabati,Kaya vitamin E & protein
+Kacang Tanah Rebus (1 Piring / Mangkok),1 piring,198.0,8.4,15.6,7.2,1.3,30.0,Lauk Pauk Nabati,Kaya vitamin E & protein
+Kacang Tanah Rebus Olahan Spesial,1 porsi spesial,214.5,9.1,16.9,7.8,1.4,32.5,Lauk Pauk Nabati,Kaya vitamin E & protein
+Kacang Tanah Rebus Porsi Cemilan,1 potong kecil,49.5,2.1,3.9,1.8,0.3,7.5,Lauk Pauk Nabati,Kaya vitamin E & protein
+Sayur Bayam Bening,1 mangkuk (100g),23,2.9,0.4,3.6,3.5,166,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Bayam Bening (Porsi Kecil),1/2 porsi,11.5,1.4,0.2,1.8,1.8,83.0,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Bayam Bening (Porsi Besar),1.5 porsi,34.5,4.3,0.6,5.4,5.2,249.0,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Bayam Bening (1 Piring / Mangkok),1 piring,27.6,3.5,0.5,4.3,4.2,199.2,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Bayam Bening Olahan Spesial,1 porsi spesial,29.9,3.8,0.5,4.7,4.5,215.8,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Bayam Bening Porsi Cemilan,1 potong kecil,6.9,0.9,0.1,1.1,1.1,49.8,Sayuran,Sangat kaya Zat Besi & Asam Folat
+Sayur Kangkung Tumis,1 mangkuk (100g),45,2.6,2.5,3.5,2.5,67,Sayuran,Kaya serat penolak konstipasi
+Sayur Kangkung Tumis (Porsi Kecil),1/2 porsi,22.5,1.3,1.2,1.8,1.2,33.5,Sayuran,Kaya serat penolak konstipasi
+Sayur Kangkung Tumis (Porsi Besar),1.5 porsi,67.5,3.9,3.8,5.2,3.8,100.5,Sayuran,Kaya serat penolak konstipasi
+Sayur Kangkung Tumis (1 Piring / Mangkok),1 piring,54.0,3.1,3.0,4.2,3.0,80.4,Sayuran,Kaya serat penolak konstipasi
+Sayur Kangkung Tumis Olahan Spesial,1 porsi spesial,58.5,3.4,3.2,4.5,3.2,87.1,Sayuran,Kaya serat penolak konstipasi
+Sayur Kangkung Tumis Porsi Cemilan,1 potong kecil,13.5,0.8,0.8,1.1,0.8,20.1,Sayuran,Kaya serat penolak konstipasi
+Sayur Daun Katuk,1 mangkuk (100g),35,4.0,0.6,4.5,2.8,220,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Katuk (Porsi Kecil),1/2 porsi,17.5,2.0,0.3,2.2,1.4,110.0,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Katuk (Porsi Besar),1.5 porsi,52.5,6.0,0.9,6.8,4.2,330.0,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Katuk (1 Piring / Mangkok),1 piring,42.0,4.8,0.7,5.4,3.4,264.0,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Katuk Olahan Spesial,1 porsi spesial,45.5,5.2,0.8,5.9,3.6,286.0,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Katuk Porsi Cemilan,1 potong kecil,10.5,1.2,0.2,1.3,0.8,66.0,Sayuran,Sangat tinggi Kalsium & persiapan ASI
+Sayur Daun Kelor,1 mangkuk (100g),38,4.5,0.8,5.0,4.0,250,Sayuran,Superfood zat besi & antioksidan
+Sayur Daun Kelor (Porsi Kecil),1/2 porsi,19.0,2.2,0.4,2.5,2.0,125.0,Sayuran,Superfood zat besi & antioksidan
+Sayur Daun Kelor (Porsi Besar),1.5 porsi,57.0,6.8,1.2,7.5,6.0,375.0,Sayuran,Superfood zat besi & antioksidan
+Sayur Daun Kelor (1 Piring / Mangkok),1 piring,45.6,5.4,1.0,6.0,4.8,300.0,Sayuran,Superfood zat besi & antioksidan
+Sayur Daun Kelor Olahan Spesial,1 porsi spesial,49.4,5.9,1.0,6.5,5.2,325.0,Sayuran,Superfood zat besi & antioksidan
+Sayur Daun Kelor Porsi Cemilan,1 potong kecil,11.4,1.3,0.2,1.5,1.2,75.0,Sayuran,Superfood zat besi & antioksidan
+Sayur Sop Bening,1 mangkuk (150g),45,1.5,1.0,7.5,0.7,30,Sayuran,Hidrasi cairan & vitamin
+Sayur Sop Bening (Porsi Kecil),1/2 porsi,22.5,0.8,0.5,3.8,0.3,15.0,Sayuran,Hidrasi cairan & vitamin
+Sayur Sop Bening (Porsi Besar),1.5 porsi,67.5,2.2,1.5,11.2,1.0,45.0,Sayuran,Hidrasi cairan & vitamin
+Sayur Sop Bening (1 Piring / Mangkok),1 piring,54.0,1.8,1.2,9.0,0.8,36.0,Sayuran,Hidrasi cairan & vitamin
+Sayur Sop Bening Olahan Spesial,1 porsi spesial,58.5,2.0,1.3,9.8,0.9,39.0,Sayuran,Hidrasi cairan & vitamin
+Sayur Sop Bening Porsi Cemilan,1 potong kecil,13.5,0.4,0.3,2.2,0.2,9.0,Sayuran,Hidrasi cairan & vitamin
+Sayur Asem Jakarta,1 mangkuk (150g),55,2.0,1.2,9.5,1.1,45,Sayuran,Pereda mual alami
+Sayur Asem Jakarta (Porsi Kecil),1/2 porsi,27.5,1.0,0.6,4.8,0.6,22.5,Sayuran,Pereda mual alami
+Sayur Asem Jakarta (Porsi Besar),1.5 porsi,82.5,3.0,1.8,14.2,1.7,67.5,Sayuran,Pereda mual alami
+Sayur Asem Jakarta (1 Piring / Mangkok),1 piring,66.0,2.4,1.4,11.4,1.3,54.0,Sayuran,Pereda mual alami
+Sayur Asem Jakarta Olahan Spesial,1 porsi spesial,71.5,2.6,1.6,12.3,1.4,58.5,Sayuran,Pereda mual alami
+Sayur Asem Jakarta Porsi Cemilan,1 potong kecil,16.5,0.6,0.4,2.9,0.3,13.5,Sayuran,Pereda mual alami
+Gado-Gado Surabaya,1 porsi (200g),240,10.0,11.0,25.0,3.2,120,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Gado-Gado Surabaya (Porsi Kecil),1/2 porsi,120.0,5.0,5.5,12.5,1.6,60.0,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Gado-Gado Surabaya (Porsi Besar),1.5 porsi,360.0,15.0,16.5,37.5,4.8,180.0,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Gado-Gado Surabaya (1 Piring / Mangkok),1 piring,288.0,12.0,13.2,30.0,3.8,144.0,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Gado-Gado Surabaya Olahan Spesial,1 porsi spesial,312.0,13.0,14.3,32.5,4.2,156.0,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Gado-Gado Surabaya Porsi Cemilan,1 potong kecil,72.0,3.0,3.3,7.5,1.0,36.0,Sayuran & Komposisi,Lengkap nutrisi mikro & makro
+Pecel Sayur,1 porsi (150g),210,8.0,10.0,22.0,2.8,110,Sayuran,Kacang & sayuran hijau tinggi folat
+Pecel Sayur (Porsi Kecil),1/2 porsi,105.0,4.0,5.0,11.0,1.4,55.0,Sayuran,Kacang & sayuran hijau tinggi folat
+Pecel Sayur (Porsi Besar),1.5 porsi,315.0,12.0,15.0,33.0,4.2,165.0,Sayuran,Kacang & sayuran hijau tinggi folat
+Pecel Sayur (1 Piring / Mangkok),1 piring,252.0,9.6,12.0,26.4,3.4,132.0,Sayuran,Kacang & sayuran hijau tinggi folat
+Pecel Sayur Olahan Spesial,1 porsi spesial,273.0,10.4,13.0,28.6,3.6,143.0,Sayuran,Kacang & sayuran hijau tinggi folat
+Pecel Sayur Porsi Cemilan,1 potong kecil,63.0,2.4,3.0,6.6,0.8,33.0,Sayuran,Kacang & sayuran hijau tinggi folat
+Buah Pisang Ambon,1 buah (100g),89,1.1,0.3,22.8,0.3,5,Buah,Kalium & B6 pereda mual
+Buah Pisang Ambon (Porsi Kecil),1/2 porsi,44.5,0.6,0.1,11.4,0.1,2.5,Buah,Kalium & B6 pereda mual
+Buah Pisang Ambon (Porsi Besar),1.5 porsi,133.5,1.7,0.4,34.2,0.4,7.5,Buah,Kalium & B6 pereda mual
+Buah Pisang Ambon (1 Piring / Mangkok),1 piring,106.8,1.3,0.4,27.4,0.4,6.0,Buah,Kalium & B6 pereda mual
+Buah Pisang Ambon Olahan Spesial,1 porsi spesial,115.7,1.4,0.4,29.6,0.4,6.5,Buah,Kalium & B6 pereda mual
+Buah Pisang Ambon Porsi Cemilan,1 potong kecil,26.7,0.3,0.1,6.8,0.1,1.5,Buah,Kalium & B6 pereda mual
+Buah Jeruk Keprok,1 buah (100g),47,0.9,0.1,11.8,0.1,40,Buah,Vitamin C tinggi penyerap zat besi
+Buah Jeruk Keprok (Porsi Kecil),1/2 porsi,23.5,0.5,0.1,5.9,0.1,20.0,Buah,Vitamin C tinggi penyerap zat besi
+Buah Jeruk Keprok (Porsi Besar),1.5 porsi,70.5,1.4,0.2,17.7,0.2,60.0,Buah,Vitamin C tinggi penyerap zat besi
+Buah Jeruk Keprok (1 Piring / Mangkok),1 piring,56.4,1.1,0.1,14.2,0.1,48.0,Buah,Vitamin C tinggi penyerap zat besi
+Buah Jeruk Keprok Olahan Spesial,1 porsi spesial,61.1,1.2,0.1,15.3,0.1,52.0,Buah,Vitamin C tinggi penyerap zat besi
+Buah Jeruk Keprok Porsi Cemilan,1 potong kecil,14.1,0.3,0.0,3.5,0.0,12.0,Buah,Vitamin C tinggi penyerap zat besi
+Buah Alpukat,1 buah (150g),240,3.0,22.0,12.0,0.9,18,Buah,Lemak sehat pembentuk otak janin
+Buah Alpukat (Porsi Kecil),1/2 porsi,120.0,1.5,11.0,6.0,0.5,9.0,Buah,Lemak sehat pembentuk otak janin
+Buah Alpukat (Porsi Besar),1.5 porsi,360.0,4.5,33.0,18.0,1.4,27.0,Buah,Lemak sehat pembentuk otak janin
+Buah Alpukat (1 Piring / Mangkok),1 piring,288.0,3.6,26.4,14.4,1.1,21.6,Buah,Lemak sehat pembentuk otak janin
+Buah Alpukat Olahan Spesial,1 porsi spesial,312.0,3.9,28.6,15.6,1.2,23.4,Buah,Lemak sehat pembentuk otak janin
+Buah Alpukat Porsi Cemilan,1 potong kecil,72.0,0.9,6.6,3.6,0.3,5.4,Buah,Lemak sehat pembentuk otak janin
+Buah Pepaya Matang,1 potong (100g),46,0.5,0.1,12.0,1.7,23,Buah,Atasi sembelit kehamilan
+Buah Pepaya Matang (Porsi Kecil),1/2 porsi,23.0,0.2,0.1,6.0,0.8,11.5,Buah,Atasi sembelit kehamilan
+Buah Pepaya Matang (Porsi Besar),1.5 porsi,69.0,0.8,0.2,18.0,2.5,34.5,Buah,Atasi sembelit kehamilan
+Buah Pepaya Matang (1 Piring / Mangkok),1 piring,55.2,0.6,0.1,14.4,2.0,27.6,Buah,Atasi sembelit kehamilan
+Buah Pepaya Matang Olahan Spesial,1 porsi spesial,59.8,0.7,0.1,15.6,2.2,29.9,Buah,Atasi sembelit kehamilan
+Buah Pepaya Matang Porsi Cemilan,1 potong kecil,13.8,0.1,0.0,3.6,0.5,6.9,Buah,Atasi sembelit kehamilan
+Buah Mangga Arumanis,1 buah (150g),90,0.8,0.3,22.5,0.2,14,Buah,Tinggi Vitamin A & C
+Buah Mangga Arumanis (Porsi Kecil),1/2 porsi,45.0,0.4,0.1,11.2,0.1,7.0,Buah,Tinggi Vitamin A & C
+Buah Mangga Arumanis (Porsi Besar),1.5 porsi,135.0,1.2,0.4,33.8,0.3,21.0,Buah,Tinggi Vitamin A & C
+Buah Mangga Arumanis (1 Piring / Mangkok),1 piring,108.0,1.0,0.4,27.0,0.2,16.8,Buah,Tinggi Vitamin A & C
+Buah Mangga Arumanis Olahan Spesial,1 porsi spesial,117.0,1.0,0.4,29.2,0.3,18.2,Buah,Tinggi Vitamin A & C
+Buah Mangga Arumanis Porsi Cemilan,1 potong kecil,27.0,0.2,0.1,6.8,0.1,4.2,Buah,Tinggi Vitamin A & C
+Buah Naga Merah,1 potong (100g),50,1.0,0.4,11.0,0.6,10,Buah,Serat & antioksidan baik
+Buah Naga Merah (Porsi Kecil),1/2 porsi,25.0,0.5,0.2,5.5,0.3,5.0,Buah,Serat & antioksidan baik
+Buah Naga Merah (Porsi Besar),1.5 porsi,75.0,1.5,0.6,16.5,0.9,15.0,Buah,Serat & antioksidan baik
+Buah Naga Merah (1 Piring / Mangkok),1 piring,60.0,1.2,0.5,13.2,0.7,12.0,Buah,Serat & antioksidan baik
+Buah Naga Merah Olahan Spesial,1 porsi spesial,65.0,1.3,0.5,14.3,0.8,13.0,Buah,Serat & antioksidan baik
+Buah Naga Merah Porsi Cemilan,1 potong kecil,15.0,0.3,0.1,3.3,0.2,3.0,Buah,Serat & antioksidan baik
+Susu Ibu Hamil (Prenatal),1 gelas (200ml),180,8.0,4.5,26.0,6.0,400,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Susu Ibu Hamil (Prenatal) (Porsi Kecil),1/2 porsi,90.0,4.0,2.2,13.0,3.0,200.0,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Susu Ibu Hamil (Prenatal) (Porsi Besar),1.5 porsi,270.0,12.0,6.8,39.0,9.0,600.0,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Susu Ibu Hamil (Prenatal) (1 Piring / Mangkok),1 piring,216.0,9.6,5.4,31.2,7.2,480.0,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Susu Ibu Hamil (Prenatal) Olahan Spesial,1 porsi spesial,234.0,10.4,5.9,33.8,7.8,520.0,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Susu Ibu Hamil (Prenatal) Porsi Cemilan,1 potong kecil,54.0,2.4,1.3,7.8,1.8,120.0,Minuman Nutrisi,"Lengkap Asam Folat, DHA & Kalsium"
+Air Kelapa Muda,1 gelas (200ml),46,0.7,0.2,8.9,0.5,48,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Air Kelapa Muda (Porsi Kecil),1/2 porsi,23.0,0.3,0.1,4.5,0.2,24.0,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Air Kelapa Muda (Porsi Besar),1.5 porsi,69.0,1.0,0.3,13.4,0.8,72.0,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Air Kelapa Muda (1 Piring / Mangkok),1 piring,55.2,0.8,0.2,10.7,0.6,57.6,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Air Kelapa Muda Olahan Spesial,1 porsi spesial,59.8,0.9,0.3,11.6,0.7,62.4,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Air Kelapa Muda Porsi Cemilan,1 potong kecil,13.8,0.2,0.1,2.7,0.1,14.4,Minuman Nutrisi,Elektrolit alami anti dehidrasi
+Jamu Kunyit Asam,1 gelas (150ml),60,0.2,0.1,15.0,0.3,12,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Kunyit Asam (Porsi Kecil),1/2 porsi,30.0,0.1,0.1,7.5,0.1,6.0,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Kunyit Asam (Porsi Besar),1.5 porsi,90.0,0.3,0.2,22.5,0.4,18.0,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Kunyit Asam (1 Piring / Mangkok),1 piring,72.0,0.2,0.1,18.0,0.4,14.4,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Kunyit Asam Olahan Spesial,1 porsi spesial,78.0,0.3,0.1,19.5,0.4,15.6,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Kunyit Asam Porsi Cemilan,1 potong kecil,18.0,0.1,0.0,4.5,0.1,3.6,Minuman / Herbal,PERINGATAN: Batasi pada trimester 1! Konsultasikan ke bidan.
+Jamu Beras Kencur,1 gelas (150ml),90,0.5,0.3,21.0,0.4,15,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."
+Jamu Beras Kencur (Porsi Kecil),1/2 porsi,45.0,0.2,0.1,10.5,0.2,7.5,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."
+Jamu Beras Kencur (Porsi Besar),1.5 porsi,135.0,0.8,0.4,31.5,0.6,22.5,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."
+Jamu Beras Kencur (1 Piring / Mangkok),1 piring,108.0,0.6,0.4,25.2,0.5,18.0,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."
+Jamu Beras Kencur Olahan Spesial,1 porsi spesial,117.0,0.7,0.4,27.3,0.5,19.5,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."
+Jamu Beras Kencur Porsi Cemilan,1 potong kecil,27.0,0.1,0.1,6.3,0.1,4.5,Minuman / Herbal,"Hangat, namun hindari konsumsi berlebih saat hamil."

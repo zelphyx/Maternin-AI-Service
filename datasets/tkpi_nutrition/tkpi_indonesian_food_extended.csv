@@ -1,0 +1,29 @@
+nama_bahan,porsi_standar,energi_kcal,protein_g,lemak_g,karbohidrat_g,zat_besi_mg,kalsium_mg,kategori,catatan_ibu_hamil
+Nasi Putih,1 centong (100g),130,2.4,0.2,28.6,0.2,25,Makanan Pokok,"Sumber karbohidrat utama, stabilkan gula darah"
+Nasi Merah,1 centong (100g),110,2.6,0.9,23.5,0.8,10,Makanan Pokok,"Tinggi serat, sangat baik untuk cegah diabetes gestasional"
+Nasi Uduk,1 porsi (150g),260,4.5,9.2,38.0,0.6,30,Makanan Pokok,Kalori lebih tinggi karena santan
+Bubur Ayam,1 mangkuk (200g),210,7.0,6.0,32.0,0.9,40,Makanan Pokok,Mudah dicerna saat mual trimester 1
+Telur Ayam Rebus,1 butir (50g),77,6.3,5.3,0.6,1.2,25,Lauk Pauk,"Sangat bagus, tinggi kolin untuk otak janin. Pastikan matang!"
+Telur Dadar,1 butir (55g),110,6.5,8.8,0.4,1.3,27,Lauk Pauk,Sumber protein cepat saji
+Daging Sapi Rendang,1 potong (60g),195,14.5,12.0,3.5,2.1,18,Lauk Pauk,Sangat kaya zat besi Heme untuk cegah anemia
+Daging Sapi Semur,1 potong (60g),140,13.0,6.5,5.0,1.8,15,Lauk Pauk,Kaya protein dan zat besi
+Ayam Goreng Dada,1 potong (80g),190,22.0,9.5,1.0,1.1,15,Lauk Pauk,Protein tinggi pembentuk jaringan janin
+Ayam Ungkep Rebus,1 potong (80g),150,21.0,5.0,0.5,1.0,14,Lauk Pauk,"Rendah lemak, tinggi protein"
+Ikan Kembung Goreng,1 ekor (75g),160,16.5,9.0,0.0,1.2,110,Lauk Pauk,Kaya Omega-3 & DHA (lebih tinggi dari salmon lokal)
+Ikan Salmon,1 potong (100g),206,22.0,12.0,0.0,0.8,12,Lauk Pauk,Kaya Asam Lemak Omega-3
+Ikan Lele Goreng,1 ekor (80g),175,14.0,11.0,2.0,0.9,35,Lauk Pauk,Tinggi protein murah meriah
+Tahu Goreng,1 potong (50g),58,4.1,4.2,1.4,1.7,40,Lauk Pauk,Protein nabati & kalsium bagus
+Tempe Bacem,1 potong (50g),110,7.5,4.0,11.0,1.6,60,Lauk Pauk,Tinggi asam folat & protein fungsional
+Tempe Goreng Mendoan,1 potong (50g),135,6.0,9.5,7.0,1.4,50,Lauk Pauk,Gunakan minyak bersih saat menggoreng
+Sayur Bayam Bening,1 mangkuk (100g),23,2.9,0.4,3.6,3.5,166,Sayuran,Sangat kaya zat besi non-heme & Asam Folat
+Sayur Kangkung Tumis,1 mangkuk (100g),45,2.6,2.5,3.5,2.5,67,Sayuran,Kaya serat pencegah sembelit hamil
+Sayur Sop Bening,1 mangkuk (150g),45,1.5,1.0,7.5,0.7,30,Sayuran,Hidrasi cairan & mikro nutrisi bagus
+Sayur Asem,1 mangkuk (150g),55,2.0,1.2,9.5,1.1,45,Sayuran,Menyegarkan saat mual trimester pertama
+Gado-Gado,1 porsi (200g),240,10.0,11.0,25.0,3.2,120,Sayuran & Kombinasi,"Komplit serat, protein & kalsium"
+Capcay Kuah,1 mangkuk (150g),70,3.5,2.0,9.0,1.2,50,Sayuran,Aneka vitamin C & mineral pendukung imun
+Buah Pisang Ambon,1 buah (100g),89,1.1,0.3,22.8,0.3,5,Buah,"Tinggi Kalium & B6, reda mual muntah"
+Buah Jeruk Pontianak,1 buah (100g),47,0.9,0.1,11.8,0.1,40,Buah,Tinggi Vitamin C penyerap zat besi
+Buah Alpukat,1 buah (150g),240,3.0,22.0,12.0,0.9,18,Buah,Lemak sehat pembentuk sistem saraf janin
+Buah Pepaya Matang,1 potong (100g),46,0.5,0.1,12.0,1.7,23,Buah,Sangat baik atasi konstipasi/sembelit
+Susu Ibu Hamil Hamil,1 gelas (200ml),180,8.0,4.5,26.0,6.0,400,Minuman Nutrisi,"Lengkap Asam Folat, DHA, Kalsium & Besi"
+Air Kelapa Muda,1 gelas (200ml),46,0.7,0.2,8.9,0.5,48,Minuman Nutrisi,Elektrolit alami cegah dehidrasi

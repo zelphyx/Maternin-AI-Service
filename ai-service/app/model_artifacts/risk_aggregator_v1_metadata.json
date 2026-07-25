@@ -1,0 +1,91 @@
+{
+  "model_name": "risk_aggregator_v1",
+  "model_type": "VotingClassifier (XGB + RandomForest)",
+  "model_components": [
+    "XGBoost",
+    "RandomForest"
+  ],
+  "ensemble_weights": [
+    1.5,
+    1.0
+  ],
+  "features": [
+    "systolic_bp",
+    "diastolic_bp",
+    "age",
+    "gestational_age_weeks",
+    "bmi",
+    "has_hypertension_history",
+    "protein_urine_encoded",
+    "has_preeclampsia_history",
+    "systolic_diastolic_product",
+    "pulse_pressure",
+    "mean_arterial_pressure",
+    "bp_severity",
+    "age_bp_interaction",
+    "is_extreme_age",
+    "is_high_age",
+    "is_young",
+    "heart_rate_abnormal",
+    "heart_rate_severity",
+    "fever",
+    "hypothermia",
+    "bs_abnormal",
+    "bs_severity",
+    "severe_hypertension",
+    "moderate_hypertension",
+    "abnormal_vitals_count",
+    "age_bp_severity",
+    "multi_system_abnormality",
+    "systolic_squared",
+    "diastolic_squared"
+  ],
+  "n_features": 29,
+  "labels": [
+    "hijau",
+    "kuning",
+    "merah"
+  ],
+  "dataset": "UCI_Maternal_Health_Risk_863",
+  "dataset_size": 1014,
+  "dataset_origin": "Bangladesh public hospitals (Ahmed et al., 2021)",
+  "dataset_real_vs_synthetic": "REAL",
+  "improvements_applied": [
+    "Feature engineering (28 features from 8 base)",
+    "SMOTE augmentation (1014 -> 5000+)",
+    "Hyperparameter tuning (XGB grid search)",
+    "Ensemble voting classifier"
+  ],
+  "split": "60/20/20 train/val/test + SMOTE on train",
+  "split_seed": 42,
+  "metrics": {
+    "lr_test_accuracy": 0.7734,
+    "lr_test_f1": 0.623,
+    "xgb_test_accuracy": 0.8424,
+    "xgb_test_f1": 0.8416,
+    "rf_test_accuracy": 0.6995,
+    "rf_test_f1": 0.7015,
+    "ensemble_test_accuracy": 0.8522,
+    "ensemble_test_f1": 0.8514,
+    "ensemble_test_precision": 0.8512,
+    "ensemble_test_recall": 0.8522,
+    "cv_f1_mean": 0.7981,
+    "cv_f1_std": 0.0096
+  },
+  "confusion_matrix_test": {
+    "TN": 70,
+    "FP": 10,
+    "FN": 9,
+    "TP": 52
+  },
+  "improvement_vs_baseline": {
+    "xgb_test_acc_before": 0.734,
+    "xgb_test_acc_after": 0.8424,
+    "ensemble_test_acc_after": 0.8522
+  },
+  "caveats": [
+    "Real UCI Bangladesh data with engineered features",
+    "SMOTE augmentation on training set only (no leakage to val/test)",
+    "Indonesia-specific data would give different numbers"
+  ]
+}

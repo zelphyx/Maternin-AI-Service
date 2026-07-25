@@ -1,0 +1,49 @@
+{
+  "title": "Pedoman Pencegahan & Penanggulangan Anemia Pada Ibu Hamil",
+  "publisher": "Kementerian Kesehatan RI",
+  "sections": [
+    {
+      "category": "Ambang Batas Hemoglobin (Hb) Menurut Trimester",
+      "thresholds": [
+        {
+          "trimester": "Trimester 1 (0-12 minggu)",
+          "normal_hb": ">= 11.0 g/dL",
+          "anemia_ringan": "10.0 - 10.9 g/dL",
+          "anemia_sedang": "7.0 - 9.9 g/dL",
+          "anemia_berat": "< 7.0 g/dL"
+        },
+        {
+          "trimester": "Trimester 2 (13-27 minggu)",
+          "normal_hb": ">= 10.5 g/dL",
+          "anemia_ringan": "9.5 - 10.4 g/dL",
+          "anemia_sedang": "7.0 - 9.4 g/dL",
+          "anemia_berat": "< 7.0 g/dL"
+        },
+        {
+          "trimester": "Trimester 3 (28-40 minggu)",
+          "normal_hb": ">= 11.0 g/dL",
+          "anemia_ringan": "10.0 - 10.9 g/dL",
+          "anemia_sedang": "7.0 - 9.9 g/dL",
+          "anemia_berat": "< 7.0 g/dL"
+        }
+      ]
+    },
+    {
+      "category": "Suplementasi Tablet Tambah Darah (TTD)",
+      "guidelines": [
+        "Ibu hamil wajib mengonsumsi minimal 90 tablet tambah darah (TTD) selama masa kehamilan.",
+        "Dosis pencegahan: 1 tablet/hari (mengandung 60 mg besi elemental + 400 mcg asam folat).",
+        "Dosis pengobatan anemia ringan-sedang: 2 tablet/hari hingga kadar Hb kembali normal.",
+        "Cara minum: Dimunim malam hari sebelum tidur dengan air putih atau jus buah yang kaya Vitamin C (meningkatkan penyerapan besi). Dilarang minum dengan teh, kopi, atau susu (menghambat penyerapan besi)."
+      ]
+    },
+    {
+      "category": "Gejala Klinis & Pemeriksaan Konjungtiva",
+      "clinical_signs": [
+        "5L: Lesu, Letih, Lemah, Lelah, Lalai.",
+        "Pucat pada konjungtiva palpebra (kelopak mata bawah), telapak tangan, dan bibir.",
+        "Pusing, mata berkunang-kunang, napas pendek saat beraktivitas."
+      ]
+    }
+  ]
+}

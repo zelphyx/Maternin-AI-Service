@@ -1,0 +1,14 @@
+.env
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+app/model_artifacts/*.pkl
+app/model_artifacts/*.onnx
+app/model_artifacts/*.tflite
+app/model_artifacts/*.pt

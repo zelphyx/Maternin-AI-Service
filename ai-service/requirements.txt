@@ -1,0 +1,36 @@
+# MaternIn AI Service — Python Dependencies
+# ============================================
+# Install: pip install -r requirements.txt
+
+# --- Core Framework ---
+fastapi>=0.115.0,<1.0.0
+uvicorn[standard]>=0.30.0,<1.0.0
+pydantic>=2.7.0,<3.0.0
+pydantic-settings>=2.3.0,<3.0.0
+
+# --- HTTP Client (untuk callback ke NestJS & Fonnte) ---
+httpx>=0.27.0,<1.0.0
+
+# --- Machine Learning ---
+scikit-learn>=1.5.0,<2.0.0
+xgboost>=2.0.0,<3.0.0
+numpy>=1.26.0,<3.0.0
+pandas>=2.2.0,<3.0.0
+
+# --- Computer Vision ---
+# torch          # Uncomment saat model MobileNetV3 siap
+# onnxruntime    # Uncomment saat model ONNX siap
+mediapipe>=0.10.0,<1.0.0
+Pillow>=10.0.0,<12.0.0
+
+# --- LLM & NLP ---
+langchain>=0.2.0,<1.0.0
+langchain-groq>=0.1.0,<1.0.0
+
+# --- Testing ---
+pytest>=8.0.0,<9.0.0
+pytest-asyncio>=0.23.0,<1.0.0
+
+# --- Utilities ---
+python-dotenv>=1.0.0,<2.0.0
+python-multipart>=0.0.9

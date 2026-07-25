@@ -1,0 +1,96 @@
+{
+  "title": "Pedoman Diagnosis & Tatalaksana 15 Komplikasi Obstetri Utama",
+  "publisher": "POGI & Kemenkes RI & WHO ICD-MM",
+  "complications": [
+    {
+      "name": "Preeklampsia Berat (PEB)",
+      "icd_10": "O14.1",
+      "diagnostic_criteria": "Tensi >= 160/110 mmHg atau Tensi >= 140/90 mmHg + Trombosit < 100.000, SGOT/SGPT naik 2x, Nyeri ulu hati, Sakit kepala hebat, Pandangan kabur, atau Edema paru.",
+      "emergency_protocol": "MgSO4 40% 4g IV lambat + 6g IV drip dalam RL. Antihipertensi Nifedipin 10mg oral. Segera Rujuk RS rujukan persalinan."
+    },
+    {
+      "name": "Eklampsia",
+      "icd_10": "O15.0",
+      "diagnostic_criteria": "Preeklampsia disertai kejang tonik-klonik parsial/umum dan/atau koma.",
+      "emergency_protocol": "Bebaskan jalan napas, beri O2 4-6 L/menit. MgSO4 4g IV lambat + 6g drip. Jika kejang berulang: MgSO4 2g IV. Terminasi kehamilan setelah kondisi ibu stabil."
+    },
+    {
+      "name": "HELLP Syndrome",
+      "icd_10": "O14.2",
+      "diagnostic_criteria": "Hemolysis (LDH > 600 U/L), Elevated Liver enzymes (SGOT/SGPT naik), Low Platelets (Trombosit < 100.000/uL). Komplikasi berat Preeklampsia.",
+      "emergency_protocol": "Stabilisasi ibu, beri MgSO4, pertimbangkan kortikosteroid (Deksametason) & terminasi kehamilan segera di Faskes Rujukan Sekunder/Tersier."
+    },
+    {
+      "name": "Perdarahan Postpartum (PPH) / Atonia Uteri",
+      "icd_10": "O72.1",
+      "diagnostic_criteria": "Perdarahan > 500 ml setelah persalinan pervaginam atau > 1000 ml setelah C-section. Uterus lembek/tidak berkontraksi.",
+      "emergency_protocol": "Masase uterus 15 detik, Oksitosin 10 IU IM + Ergometrin 0.2 mg IM (jika tidak hipertensi), infus Oksitosin 20 IU dalam 500 ml RL 40 tetes/menit. Kompresi Bimanual Interna (KBI)."
+    },
+    {
+      "name": "Hyperemesis Gravidarum",
+      "icd_10": "O21.1",
+      "diagnostic_criteria": "Mual muntah berlebihan trimester 1 hingga BB turun > 5%, dehidrasi, ketonuria positif, gangguan elektrolit.",
+      "emergency_protocol": "Rehidrasi cairan IV (RL/NaCl 0.9%), Vitamin B1 (Thiamine) 100mg IV, Antiemetik (Ondansetron/Metoklopramid)."
+    },
+    {
+      "name": "Diabetes Gestasional (GDM)",
+      "icd_10": "O24.4",
+      "diagnostic_criteria": "Gula Darah Puasa (GDP) >= 92 mg/dL atau TTGO jam ke-2 >= 153 mg/dL pada usia kehamilan 24-28 minggu.",
+      "emergency_protocol": "Diet terapi nutrisi medis, pantau gula darah mandiri. Jika tidak terkontrol: terapi Insulin."
+    },
+    {
+      "name": "Plasenta Previa",
+      "icd_10": "O44.1",
+      "diagnostic_criteria": "Perdarahan per vaginam merah segar TANPA rasa nyeri pada usia kehamilan > 22 minggu. Plasenta menutupi jalan lahir.",
+      "emergency_protocol": "DILARANG periksa dalam (VT)! Pasang IV line cairan, tirah baring, rujuk RS untuk C-section terencana/darurat."
+    },
+    {
+      "name": "Solusio Plasenta (Abruptio Placentae)",
+      "icd_10": "O45.9",
+      "diagnostic_criteria": "Perdarahan per vaginam disertai NYERI PERUT HEBAT/tegang, uterus tegang seperti papan, gawat janin.",
+      "emergency_protocol": "Pasang 2 jalur IV line, beri O2, siapkan transfusi darah, terminasi kehamilan cito di RS Rujukan."
+    },
+    {
+      "name": "Ketuban Pecah Dini (KPD / PROM)",
+      "icd_10": "O42.9",
+      "diagnostic_criteria": "Keluarnya cairan ketuban dari vagina sebelum ada tanda persalinan. Tes lakmus/nitrazin positif (berubah biru).",
+      "emergency_protocol": "Cek demam/infeksi (chorioamnionitis), cegah pemeriksaan dalam berulang, berikan antibiotik profilaksis (Eritromisin/Ampisilin), rujuk RS."
+    },
+    {
+      "name": "Anemia Berat Dalam Kehamilan",
+      "icd_10": "O99.0",
+      "diagnostic_criteria": "Kadar Hemoglobin (Hb) < 7.0 g/dL pada ibu hamil.",
+      "emergency_protocol": "Rujuk RS untuk transfusi PRC (Packed Red Cells) dan evaluasi sumber perdarahan atau malnutrisi berat."
+    },
+    {
+      "name": "Infeksi Nifas / Endometritis",
+      "icd_10": "O85",
+      "diagnostic_criteria": "Demam >= 38.0°C pada hari ke 2-10 nifas, nyeri tekan uterus, lochia berbau busuk.",
+      "emergency_protocol": "Antibiotik spektrum luas IV (Ampisilin + Gentamisin + Metronidazol), bersihkan sisa plasenta jika ada."
+    },
+    {
+      "name": "Mastitis & Abses Payudara",
+      "icd_10": "O91.2",
+      "diagnostic_criteria": "Payudara bengkak, merah, nyeri hebat, demam tinggi, dapat terbentuk fluktuasi/pus (abses).",
+      "emergency_protocol": "Kompres hangat, lanjutkan menyusui/pompa ASI, beri Antibiotik (Kloxasilin/Eritromisin) & Analgesik. Jika abses: insisi drainase."
+    },
+    {
+      "name": "Depresi Postpartum & Baby Blues",
+      "icd_10": "F53.0",
+      "diagnostic_criteria": "Skor EPDS (Edinburgh Postnatal Depression Scale) >= 13, merasa tidak mumpuni jadi ibu, menangis tanpa alasan, gangguan tidur/makan.",
+      "emergency_protocol": "Dukungan psikososial keluarga, konseling psikiatri/psikologi klinis, pertimbangkan antidepresan aman menyusui (Sertraline)."
+    },
+    {
+      "name": "Abortus Imminens (Ancaman Keguguran)",
+      "icd_10": "O20.0",
+      "diagnostic_criteria": "Perdarahan per vaginam usia kehamilan < 20 minggu, ostium uteri masih TERTUTUP, mules ringan.",
+      "emergency_protocol": "Tirah baring (bedrest), suplemen Progesteron, evaluasi USG berkala."
+    },
+    {
+      "name": "Kehamilan Ektopik Terganggu (KET)",
+      "icd_10": "O00.9",
+      "diagnostic_criteria": "Nyeri perut bawah mendadak dan hebat, perdarahan bercak, tanda syok hipovolemik (tensi drop, nadi cepat), nyeri goyang porsio (+).",
+      "emergency_protocol": "Resusitasi cairan masif, rujuk CITO RS untuk laparotomi/laparoskopi pembedahan darurat."
+    }
+  ]
+}

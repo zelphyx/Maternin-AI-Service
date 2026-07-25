@@ -1,0 +1,48 @@
+{
+  "title": "Pedoman Kesehatan Ibu dan Anak (KIA) Kemenkes RI",
+  "sections": [
+    {
+      "id": "trimester_1",
+      "topic": "Trimester Pertama (0 - 12 Minggu)",
+      "guidance": "Fokus pada pencegahan mual muntah (morning sickness), asupan asam folat (400 mcg/hari), pemeriksaan ANC pertama (K1), serta edukasi keluhan awal kehamilan.",
+      "red_flags": [
+        "Perdarahan per vaginam",
+        "Mual muntah hebat berlebihan (hyperemesis gravidarum)",
+        "Demam tinggi > 38°C"
+      ]
+    },
+    {
+      "id": "trimester_2",
+      "topic": "Trimester Kedua (13 - 27 Minggu)",
+      "guidance": "Pemantauan gerakan janin awal, asupan zat besi (tablet tambah darah 60 mg/hari), deteksi dini tensi darah dan edema.",
+      "red_flags": [
+        "Sakit kepala hebat tak kunjung hilang",
+        "Bengkak (edema) mendadak di wajah dan tangan",
+        "Pandangan kabur atau berkunang-kunang",
+        "Gerakan janin berkurang"
+      ]
+    },
+    {
+      "id": "trimester_3",
+      "topic": "Trimester Ketiga (28 - 40 Minggu)",
+      "guidance": "Persiapan persalinan (P4K), pemantauan tanda persalinan, tensi darah rutin, kecukupan nutrisi dan istirahat.",
+      "red_flags": [
+        "Keluar air ketuban sebelum waktunya",
+        "Perdarahan segar",
+        "Kejang atau hilang kesadaran",
+        "Tensi darah ≥ 140/90 mmHg (Risiko Preeklampsia)"
+      ]
+    },
+    {
+      "id": "postpartum_nifas",
+      "topic": "Masa Nifas (0 - 42 Hari)",
+      "guidance": "Pemeriksaan kesehatan ibu nifas (KF1-KF4), ASI eksklusif, kebersihan luka jahitan/C-section, serta pemantauan kesehatan mental (baby blues).",
+      "red_flags": [
+        "Perdarahan nifas sangat banyak / berbau busuk",
+        "Demam tinggi",
+        "Luka jahitan membengkak/bernanah",
+        "Rasa sedih mendalam dan putus asa terus-menerus"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title": "Pedoman Nasional Pelayanan Kedokteran (PNPK) Diagnosis & Tatalaksana Preeklampsia",
+  "publisher": "POGI & Kementerian Kesehatan RI",
+  "sections": [
+    {
+      "category": "Kriteria Diagnosis Preeklampsia",
+      "details": [
+        {
+          "condition": "Hipertensi Kehamilan",
+          "criteria": "Tekanan darah sistolik >= 140 mmHg atau diastolik >= 90 mmHg pada usia kehamilan > 20 minggu pada wanita yang sebelumnya normotensif."
+        },
+        {
+          "condition": "Preeklampsia Tanpa Gejala Berat",
+          "criteria": "Tensi >= 140/90 mmHg disertai Proteinuria >= +1 (30 mg/dL atau >= 300 mg/24 jam)."
+        },
+        {
+          "condition": "Preeklampsia Berat (PEB)",
+          "criteria": "Tensi sistolik >= 160 mmHg atau diastolik >= 110 mmHg, ATAU tensi >= 140/90 mmHg disertai salah satu gejala organ terganggu: Proteinuria >= +3, trombosit < 100.000/uL, gangguan fungsi hati (SGOT/SGPT naik 2x), nyeri ulu hati hebat, sakit kepala hebat, gangguan penglihatan (pandangan kabur), atau edema paru."
+        },
+        {
+          "condition": "Eklampsia",
+          "criteria": "Preeklampsia yang disertai kejang pasial/umum dan/atau koma yang tidak disebabkan oleh etiologi serebrovaskular lain."
+        }
+      ]
+    },
+    {
+      "category": "Protokol Penanganan Darurat & Rujukan",
+      "details": [
+        {
+          "treatment": "Pemberian MgSO4 (Magnesium Sulfat)",
+          "indication": "Pencegahan dan penanganan kejang pada Preeklampsia Berat & Eklampsia.",
+          "dosage": "Dosis awal: MgSO4 40% 4g IV (bolus lambat 5-10 menit) + 6g IV dalam Ringer Laktat 500 ml drip 28 tetes/menit. Syarat pemberian: Refleks patella (+), respirasi >= 16x/menit, urine minimal 30 ml/jam, tersedia kalsium glukonas 10% sebagai antidotum."
+        },
+        {
+          "treatment": "Antihipertensi Lini Pertama",
+          "indication": "Tekanan darah sistolik >= 160 mmHg atau diastolik >= 110 mmHg.",
+          "dosage": "Nifedipin 10 mg oral (dapat diulang per 30 menit, maks 120 mg/24 jam) atau Labetalol IV."
+        },
+        {
+          "treatment": "Indikasi Rujukan Darurat IGD",
+          "criteria": "Tensi >= 160/110 mmHg, sakit kepala hebat tak mereda, gangguan penglihatan, nyeri ulu hati, kejang, atau gerakan janin menghilang."
+        }
+      ]
+    }
+  ]
+}
