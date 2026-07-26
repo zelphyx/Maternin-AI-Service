@@ -12,3 +12,8 @@ app/model_artifacts/*.pkl
 app/model_artifacts/*.onnx
 app/model_artifacts/*.tflite
 app/model_artifacts/*.pt
+tasks-ai-service/
+prd-ai-service.md
+prd-maternin.md
+prd-backend.md
+

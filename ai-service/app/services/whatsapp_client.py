@@ -131,29 +131,28 @@ def build_emergency_message(
     pregnancy_profile_id: str,
 ) -> str:
     """
-    Buat template pesan darurat WA untuk bidan.
+    Buat template pesan skrining WA untuk bidan.
 
-    Args:
-        risk_factors: Daftar faktor risiko klinis yang terdeteksi.
-        aggregate_score: Skor risiko agregat.
-        pregnancy_profile_id: UUID profil pasien.
-
-    Returns:
-        Teks pesan darurat siap kirim.
+    IMPORTANT: Pesan ini adalah SKRINING, BUKAN diagnosis.
+    Bidan harus verifikasi langsung sebelum mengambil tindakan klinis.
     """
     factors_text = "\n".join(f"  • {f}" for f in risk_factors) if risk_factors else "  • (Tidak ada detail)"
 
     return (
-        f"🚨 *ALERT DARURAT — MaternIn*\n"
+        f"🔔 *Skrining MaternIn — Perlu Verifikasi Bidan*\n"
         f"━━━━━━━━━━━━━━━━━\n"
-        f"Status: 🔴 *RISIKO TINGGI*\n"
-        f"Skor Risiko: *{aggregate_score:.0f}/100*\n"
-        f"ID Pasien: {pregnancy_profile_id}\n"
+        f"Sistem skrining AI mendeteksi *indikasi risiko tinggi* pada seorang pasien.\n"
+        f"*Mohon verifikasi langsung* sebelum mengambil tindakan klinis.\n"
         f"\n"
-        f"Faktor Risiko:\n"
+        f"Indikator skrining (skor: *{aggregate_score:.0f}/100*):\n"
         f"{factors_text}\n"
         f"\n"
-        f"⚠️ Mohon segera hubungi/kunjungi pasien.\n"
+        f"⚠️ *Ini adalah hasil skrining, BUKAN diagnosis medis.*\n"
+        f"Keputusan klinis akhir ada di tangan Bidan.\n"
+        f"\n"
+        f"Buka detail kasus di aplikasi MaternIn:\n"
+        f"https://maternin.app/bidan/cases/{pregnancy_profile_id}\n"
         f"━━━━━━━━━━━━━━━━━\n"
-        f"_Pesan otomatis dari sistem MaternIn AI._"
+        f"_MaternIn AI · auto-generated screening alert_\n"
+        f"_Pesan ini hanya untuk tenaga kesehatan profesional._"
     )

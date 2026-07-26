@@ -94,10 +94,27 @@ class TriageAnalyzeResponse(BaseModel):
     )
     alert_delivery_status: str | None = Field(
         default=None,
-        description="Status pengiriman WA darurat: sent / failed / not_triggered",
+        description="Status pengiriman WA skrining: sent | failed | not_triggered | pending_bidan_review",
     )
     anemia_is_mock: bool = Field(
         default=False,
         description="True jika anemia_probability dari mock placeholder, bukan model nyata. "
         "Ini penting untuk transparansi — nilai 0.25 BUKAN hasil inferensi.",
+    )
+    bidan_review_required: bool = Field(
+        default=False,
+        description="True jika risk_badge==merah dan menunggu konfirmasi bidan. "
+        "WA alert TIDAK dikirim otomatis — bidan harus verify dulu via endpoint "
+        "/triage/{id}/bidan-confirm.",
+    )
+    disclaimer: str = Field(
+        default="Hasil ini adalah SKRINING OTOMATIS, BUKAN diagnosis medis. "
+                "Keputusan klinis akhir ada di tangan bidan/dokter. "
+                "Selalu verifikasi hasil ini dengan bidan penanggung jawab.",
+        description="Disclaimer wajib — bidan-assist tool, bukan diagnostic tool. "
+        "Machine-readable contract untuk consumer.",
+    )
+    screening_not_diagnosis: bool = Field(
+        default=True,
+        description="Selalu True untuk rilis bidan-assist. Reserve untuk mode diagnostic di masa depan.",
     )

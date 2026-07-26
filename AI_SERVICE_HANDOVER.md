@@ -44,9 +44,14 @@
 │                                                              │
 │  External APIs:                                              │
 │    - GROQ API → LLM chatbot + recommendation narrative      │
-│    - Fonnte API → WhatsApp emergency alert (risk=merah)     │
+│    - Fonnte API → WhatsApp SKRINING alert (risk=merah, auto) │
 └──────────────────────────────────────────────────────────────┘
-```
+
+POSITIONING: Alat BANTU skrining bidan, BUKAN alat diagnosis (sesuai PRD).
+- AI menghasilkan indikator risiko → keputusan klinis tetap di bidan
+- WA menggunakan tone skrining (bukan tone darurat/diagnostik)
+- Bidan dapat acknowledge/override via /triage/{id}/bidan-confirm
+- Setiap response menyertakan disclaimer machine-readable
 
 ---
 
@@ -151,11 +156,15 @@ INTERNAL_SERVICE_TOKEN=minimal-32-karakter-shared-secret
     "Sakit kepala hebat",
     "Protein urine positif"
   ],
-  "recommendation_text": "⚡ Perhatian — Risiko Sedang (skor 58/100)...",
+  "recommendation_text": "⚡ Skrining menemukan beberapa hal yang perlu dipantau...",
   "triage_score": 45.0,
   "anemia_probability": 0.32,
   "preeclampsia_probability": 0.65,
-  "alert_delivery_status": "not_triggered"
+  "alert_delivery_status": "not_triggered",
+  "anemia_is_mock": false,
+  "bidan_review_required": false,
+  "screening_not_diagnosis": true,
+  "disclaimer": "Hasil ini adalah SKRINING OTOMATIS, BUKAN diagnosis medis..."
 }
 ```
 
@@ -164,8 +173,46 @@ INTERNAL_SERVICE_TOKEN=minimal-32-karakter-shared-secret
 - `aggregate_score` range: 0–100
 - `anemia_probability` bisa `null` kalau `conjunctiva_image_url` tidak dikirim
 - `alert_delivery_status`: `"sent"` | `"failed"` | `"not_triggered"`
-- Kalau `risk_badge == "merah"`, AI Service OTOMATIS kirim WhatsApp ke `bidan_phone`
+- **WA skrining auto-trigger** saat `risk_badge == "merah"` (sesuai PRD 5.2). Tone: "Skrining... Perlu Verifikasi Bidan", BUKAN tone emergency.
+- `bidan_review_required`: `true` saat merah → frontend bidan harus acknowledge/override via endpoint `/triage/{id}/bidan-confirm`
+- `anemia_is_mock`: `true` jika anemia_probability dari mock placeholder (0.25)
+- `screening_not_diagnosis`: selalu `true` untuk rilis ini
+- `disclaimer`: machine-readable disclaimer — selalu ada, jangan di-strip
 - Response timeout target: **< 5 detik**
+
+### 3.1.1 POST `/api/v1/triage/{triage_id}/bidan-confirm` — Bidan Acknowledge / Override
+
+**Kapan dipanggil:** Bidan sudah melihat hasil skrining dan ingin acknowledge / override.
+
+**Request:**
+```
+POST /api/v1/triage/{triage_id}/bidan-confirm
+Headers: X-Internal-Token, X-Request-Id
+Body:
+{
+  "bidan_id": "uuid",
+  "action": "acknowledge" | "override_badge" | "dismiss",
+  "new_risk_badge": "kuning",  // hanya untuk override_badge
+  "rationale": "..."
+}
+```
+
+**Response (200):**
+```json
+{
+  "triage_id": "...",
+  "bidan_id": "...",
+  "action": "acknowledge",
+  "status": "bidan_telah_menangani",
+  "audit_trail": "logged"
+}
+```
+
+**Catatan penting untuk NestJS:**
+- Backend harus persist bidan decision (audit trail) ke tabel `bidan_reviews` atau semacamnya
+- Kalau bidan `override_badge`, simpan original_badge (merah) + new_badge + rationale
+- Kalau bidan `dismiss`, tandai triage sebagai false positive (jangan kirim follow-up alert)
+- Audit trail WAJIB immutable untuk compliance
 
 ---
 
@@ -353,14 +400,35 @@ Content-Type: application/json
 
 ## 5. Perilaku Penting yang Harus Diketahui
 
-### 5.1 WhatsApp Darurat — Otomatis dari AI Service
+### 5.1 WhatsApp Skrining — Auto-Trigger (sesuai PRD 5.2)
 
 Kalau `risk_badge == "merah"`:
-- AI Service langsung kirim WhatsApp ke `bidan_phone` yang dikirim NestJS di request triage
-- Tidak perlu NestJS triggermanual — sudah otomatis
-- Nomor bidan tidak disimpan di AI Service, hanya dipakai untuk kirim pesan
+- AI Service **auto-trigger WA skrining** ke `bidan_phone` (sesuai PRD 5.2)
+- Tone WA: "Skrining... Perlu Verifikasi Bidan" (bukan tone emergency/diagnostik)
+- Format WA berisi disclaimer: "Ini adalah hasil skrining, BUKAN diagnosis"
+- Deep link: `https://maternin.app/bidan/cases/{pregnancy_profile_id}`
+- Bidan dapat acknowledge/override via endpoint `/triage/{id}/bidan-confirm`
 
-### 5.2 Timeout & Retry
+### 5.2 Bidan Acknowledge / Override
+
+Setelah WA auto-trigger, bidan punya 3 aksi via API:
+
+```
+POST /api/v1/triage/{triage_id}/bidan-confirm
+Body:
+{
+  "bidan_id": "uuid",
+  "action": "acknowledge" | "override_badge" | "dismiss",
+  "new_risk_badge": "kuning"  // hanya untuk override_badge
+  "rationale": "..."  // wajib untuk override_badge
+}
+```
+
+- `acknowledge` → bidan konfirmasi sudah menangani (audit logged)
+- `override_badge` → bidan ganti badge AI dengan keputusan klinis sendiri
+- `dismiss` → tandai sebagai false positive (audit logged)
+
+### 5.3 Timeout & Retry
 
 | Arah | Timeout | Retry |
 |------|---------|-------|
@@ -369,14 +437,14 @@ Kalau `risk_badge == "merah"`:
 | AI Service → Fonnte (WA) | 10 detik | 3x dengan exponential backoff |
 | AI Service → GROQ (LLM) | 15 detik (chatbot), 10 detik (recommendation) | 2x |
 
-### 5.3 Fallback — Kalau LLM Down
+### 5.4 Fallback — Kalau LLM Down
 
 Kalau GROQ API down/error:
 - Chatbot reply: fallback teks generik + disclaimer medis
 - Recommendation text: fallback teks generik sesuai risk_badge
 - **Pipeline triage tetap jalan** — tidak depend pada LLM
 
-### 5.4 Error Handling
+### 5.5 Error Handling
 
 Kalau AI Service error:
 - NestJS akan terima HTTP 500

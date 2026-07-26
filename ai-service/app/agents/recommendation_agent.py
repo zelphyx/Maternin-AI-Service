@@ -28,19 +28,30 @@ FALLBACK_RECOMMENDATION = (
 
 # ── System prompt untuk narasi rekomendasi ────────────────────────────────
 SYSTEM_PROMPT = """Kamu adalah asisten kesehatan ibu hamil bernama MaternIn.
-Tugasmu HANYA menjelaskan hasil analisis risiko kehamilan dalam bahasa Indonesia yang mudah dipahami ibu hamil dan keluarganya.
+Tugasmu HANYA menjelaskan hasil SKRINING AWAL kehamilan dalam bahasa Indonesia yang mudah dipahami ibu hamil dan keluarganya.
+
+POSITIONING KAMU:
+- Kamu adalah alat BANTU SKRINING untuk bidan, BUKAN alat diagnosis
+- Keputusan klinis SELALU ada di tangan bidan/dokter
+- Kamu membantu ibu memahami hasil skrining, BUKAN menggantikan bidan
 
 ATURAN MUTLAK:
 1. JANGAN PERNAH mengubah, mengoreksi, atau mempertanyakan nilai risk_badge atau aggregate_score yang diberikan.
 2. JANGAN PERNAH membuat diagnosis medis sendiri.
 3. JANGAN PERNAH menyebut nama pasien, nomor telepon, atau data pribadi lainnya.
-4. Gunakan bahasa Indonesia yang sederhana, hangat, dan tidak menakut-nakuti.
-5. Berikan saran tindakan yang jelas dan spesifik sesuai level risiko.
-6. Selalu akhiri dengan anjuran untuk berkonsultasi dengan bidan/dokter.
+4. JANGAN PERNAH mengarahkan pasien langsung ke IGD atau tindakan medis apapun.
+   SELALU arahkan ke bidan: "Hubungi bidan Anda", "Bidan yang akan memutuskan".
+5. Bingkai setiap pesan sebagai SKRINING AWAL — buka frasa dengan
+   "Berdasarkan skrining awal MaternIn" atau "Hasil skrining menunjukkan".
+6. Selalu akhiri dengan anjuran untuk konsultasi dengan bidan/dokter.
 
 FORMAT JAWABAN:
-- Untuk MERAH: Tekankan urgensi, anjurkan segera ke faskes. Nada serius tapi tidak panik.
-- Untuk KUNING: Anjurkan pemeriksaan dalam waktu dekat. Nada perhatian.
+- Untuk MERAH: Tekankan bahwa hasil ini BUKAN diagnosis — perlu VERIFIKASI BIDAN.
+  Kalimat contoh: "Skrining menemukan indikasi yang perlu dievaluasi bidan sesegera mungkin.
+  Bidan Anda yang akan menentukan langkah selanjutnya."
+  JANGAN gunakan: "kondisi Anda adalah X", "perlu penanganan medis segera",
+  "ke IGD", "jangan menunda".
+- Untuk KUNING: Anjurkan pemeriksaan oleh bidan dalam waktu dekat. Nada perhatian.
 - Untuk HIJAU: Berikan apresiasi, anjurkan tetap rutin ANC. Nada positif."""
 
 USER_PROMPT_TEMPLATE = """Berdasarkan analisis kesehatan kehamilan, berikut hasilnya:
@@ -157,15 +168,16 @@ def _generate_fallback(
 
     if risk_badge == "merah":
         return (
-            f"⚠️ PERHATIAN — Risiko Tinggi (skor {aggregate_score:.0f}/100). "
-            f"Segera hubungi bidan atau kunjungi IGD terdekat. "
-            f"Faktor risiko terdeteksi: {factors_text}. "
-            f"Jangan menunda — kondisi ini memerlukan penanganan medis segera."
+            f"⚠️ Hasil skrining MaternIn menemukan indikasi yang perlu evaluasi bidan "
+            f"sesegera mungkin (skor {aggregate_score:.0f}/100). "
+            f"Faktor yang terdeteksi: {factors_text}. "
+            f"Silakan hubungi bidan Anda untuk langkah selanjutnya. "
+            f"Bidan Anda yang akan menentukan apakah perlu kunjungan IGD."
             f"{disclaimer}"
         )
     elif risk_badge == "kuning":
         return (
-            f"⚡ Perhatian — Risiko Sedang (skor {aggregate_score:.0f}/100). "
+            f"⚡ Skrining menemukan beberapa hal yang perlu dipantau (skor {aggregate_score:.0f}/100). "
             f"Jadwalkan kunjungan ke bidan dalam waktu dekat untuk pemeriksaan lanjutan. "
             f"Faktor yang perlu dipantau: {factors_text}. "
             f"Istirahat cukup dan pantau gejala secara rutin."
@@ -173,7 +185,7 @@ def _generate_fallback(
         )
     else:
         return (
-            f"✅ Kondisi Baik — Risiko Rendah (skor {aggregate_score:.0f}/100). "
+            f"✅ Hasil skrining menunjukkan kondisi baik (skor {aggregate_score:.0f}/100). "
             f"Lanjutkan pemeriksaan rutin sesuai jadwal ANC. "
             f"Jaga pola makan bergizi dan istirahat cukup. "
             f"Hubungi bidan jika muncul keluhan baru."
