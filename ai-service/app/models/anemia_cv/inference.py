@@ -21,7 +21,7 @@ _model_loaded = False
 _is_mock = True  # True until a real model is successfully loaded
 
 ONNX_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "..", "model_artifacts", "anemia_mobilenetv3_v1.onnx"
+    os.path.dirname(__file__), "..", "..", "model_artifacts", "anemia_convnext_tiny_v2_real.onnx"
 )
 KERAS_PATH = os.path.join(
     os.path.dirname(__file__), "..", "..", "..", "datasets",

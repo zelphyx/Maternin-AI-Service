@@ -5,6 +5,8 @@ Tests untuk model inference: Logistic Regression (Preeklampsia)
 dan XGBoost Aggregator (Risk). Menguji output range dan fallback mode.
 """
 
+import os
+
 import pytest
 
 from app.models.preeclampsia_lr import inference as lr_inf
@@ -257,3 +259,29 @@ class TestBadgeThresholds:
 
     def test_kuning_threshold_is_35(self):
         assert xgb_inf.BADGE_THRESHOLDS["kuning"] == 35
+
+
+class TestAnemiaCVOnnxPath:
+    """Verify the anemia CV inference module targets the v2_real ONNX artifact."""
+
+    def setup_method(self):
+        from app.models.anemia_cv import inference as anemia_inf
+        anemia_inf._model = None
+        anemia_inf._model_type = None
+        anemia_inf._model_loaded = False
+        anemia_inf._is_mock = True
+
+    def test_anemia_model_path_points_to_v2_real(self):
+        from app.models.anemia_cv.inference import ONNX_PATH
+        assert "v2_real" in os.path.basename(ONNX_PATH), (
+            f"ONNX_PATH must reference v2_real artifact, got {ONNX_PATH}"
+        )
+
+    def test_anemia_model_falls_back_to_mock_when_artifact_missing(self, monkeypatch):
+        from app.models.anemia_cv import inference as anemia_inf
+        # Force ONNX + Keras paths to be missing
+        monkeypatch.setattr(anemia_inf, "ONNX_PATH", "/nonexistent/v2_real.onnx")
+        monkeypatch.setattr(anemia_inf, "KERAS_PATH", "/nonexistent/mobilenet.keras")
+        anemia_inf.load_model()
+        assert anemia_inf.is_mock_mode() is True
+        assert anemia_inf._model_loaded is False

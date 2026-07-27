@@ -1,0 +1,19 @@
+# LABEL_MAPPING.yaml — auto-generated
+# Canonical labels: anemia, normal
+
+anemia:
+  - 1
+  - anemia
+  - anemic
+  - pos
+  - positive
+  - true
+  - yes
+normal:
+  - 0
+  - false
+  - healthy
+  - neg
+  - negative
+  - no
+  - normal

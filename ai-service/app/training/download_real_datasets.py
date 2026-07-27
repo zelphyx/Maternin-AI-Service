@@ -93,7 +93,7 @@ def main():
     import argparse
     parser = argparse.ArgumentParser()
     parser.add_argument("--output-dir", default="datasets/anemia_real/raw")
-    parser.add_argument("--kaggle-slug", default="eyehubofai/anemia-detection-using-conjunctiva-images")
+    parser.add_argument("--kaggle-slug", default="harshwardhanfartale/eyes-defy-anemia")
     parser.add_argument("--source", choices=["kaggle"], default="kaggle")
     args = parser.parse_args()
 

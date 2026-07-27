@@ -12,8 +12,8 @@ app/model_artifacts/*.pkl
 app/model_artifacts/*.onnx
 app/model_artifacts/*.tflite
 app/model_artifacts/*.pt
+app/model_artifacts/*.onnx.data
 tasks-ai-service/
-prd-ai-service.md
-prd-maternin.md
-prd-backend.md
+# All Markdown files
+*.md
 
