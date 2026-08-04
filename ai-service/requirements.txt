@@ -37,3 +37,6 @@ pytest-asyncio>=0.23.0,<1.0.0
 # --- Utilities ---
 python-dotenv>=1.0.0,<2.0.0
 python-multipart>=0.0.9
+
+# --- Hugging Face Hub (artifact download saat startup di Space) ---
+huggingface_hub>=0.24.0,<1.0.0

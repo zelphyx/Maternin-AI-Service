@@ -22,9 +22,16 @@ logger = logging.getLogger("maternin.ai.preeclampsia_lr")
 _pipeline = None
 _model_loaded = False
 
-ARTIFACT_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "..", "model_artifacts", "preeclampsia_lr_v1.pkl"
-)
+ARTIFACT_FILENAME = "preeclampsia_lr_v1.pkl"
+
+
+def _artifact_path() -> str:
+    """
+    Return path ke .pkl preeclampsia LR model.
+    Resolved dari HF Hub cache (production) atau folder lokal (dev).
+    """
+    from app.core.artifact_loader import ensure_model_artifacts
+    return str(ensure_model_artifacts() / ARTIFACT_FILENAME)
 
 # Mapping protein urine ke encoded value (harus konsisten dengan training)
 PROTEIN_URINE_MAP = {
@@ -120,7 +127,7 @@ def load_model(artifact_path: str | None = None) -> None:
     """
     global _pipeline, _model_loaded
 
-    path = artifact_path or ARTIFACT_PATH
+    path = artifact_path or _artifact_path()
     if not os.path.exists(path):
         logger.warning(
             f"Preeclampsia LR model not found at {path}. "

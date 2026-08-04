@@ -68,6 +68,22 @@ KONTEKS GROUNDING:
 _grounding_knowledge: str | None = None
 
 
+def _kb_path() -> str:
+    """
+    Resolve path ke KB Kemenkes JSON.
+    Production (HF Space): MATERIN_DATA_DIR/kb/<file>
+    Dev (local): ../../../datasets/buku_kia_kemenkes/<file>
+    """
+    base = os.environ.get("MATERIN_DATA_DIR")
+    filename = "maternal_health_qa_kemenkes_500.json"
+    if base:
+        return os.path.join(base, "kb", filename)
+    return os.path.join(
+        os.path.dirname(__file__), "..", "..", "..", "datasets",
+        "buku_kia_kemenkes", filename
+    )
+
+
 def _load_grounding_kb() -> str:
     """Load Q&A grounding knowledge base dari dataset.
 
@@ -79,10 +95,7 @@ def _load_grounding_kb() -> str:
     if _grounding_knowledge is not None:
         return _grounding_knowledge
 
-    kb_path = os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "datasets",
-        "buku_kia_kemenkes", "maternal_health_qa_kemenkes_500.json"
-    )
+    kb_path = _kb_path()
 
     try:
         if os.path.exists(kb_path):

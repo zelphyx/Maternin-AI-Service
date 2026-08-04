@@ -5,6 +5,7 @@ Register routers, middleware, dan lifespan events.
 """
 
 import logging
+import os
 import uuid
 from contextlib import asynccontextmanager
 
@@ -36,9 +37,19 @@ async def lifespan(app: FastAPI):
     logger.info(f"   NestJS base URL:    {settings.nestjs_internal_base_url}")
     logger.info(f"   Log level:          {settings.log_level}")
 
-    # ── Load ML models ke memori ─────────────────────────────────────
+    # ── Ensure artifacts available BEFORE loading models ─────────────
+    # In HF Space: download from Hub. In dev: use local folder.
+    # MUST run before load_lr/load_xgb/load_cv — else loaders fall back
+    # to heuristic/mock mode silently.
     t0 = time.time()
 
+    from app.core.artifact_loader import ensure_model_artifacts, ensure_runtime_data
+    ensure_model_artifacts()
+    data_dir = ensure_runtime_data()
+    os.environ["MATERIN_DATA_DIR"] = str(data_dir)
+    logger.info(f"   Runtime data dir:   {data_dir}")
+
+    # ── Load ML models ke memori ─────────────────────────────────────
     from app.models.preeclampsia_lr.inference import load_model as load_lr
     from app.models.risk_aggregator_xgb.inference import load_model as load_xgb
     from app.models.anemia_cv.inference import load_model as load_cv

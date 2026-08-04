@@ -20,9 +20,18 @@ _model_type = None  # "onnx" | "keras" | None
 _model_loaded = False
 _is_mock = True  # True until a real model is successfully loaded
 
-ONNX_PATH = os.path.join(
-    os.path.dirname(__file__), "..", "..", "model_artifacts", "anemia_convnext_tiny_v2_real.onnx"
-)
+ONNX_FILENAME = "anemia_convnext_tiny_v2_real.onnx"
+
+
+def _onnx_path() -> str:
+    """
+    Return path ke ONNX anemia CV model (default variant: ConvNeXt-Tiny).
+    Resolved dari HF Hub cache (production) atau folder lokal (dev).
+    """
+    from app.core.artifact_loader import ensure_model_artifacts
+    return str(ensure_model_artifacts() / ONNX_FILENAME)
+
+
 KERAS_PATH = os.path.join(
     os.path.dirname(__file__), "..", "..", "..", "datasets",
     "anemia_conjunctiva", "HemaVision-Anemia-Triage", "models", "mobilenet_final.keras"
@@ -36,7 +45,7 @@ def load_model(artifact_path: str | None = None) -> None:
     global _model, _model_type, _model_loaded, _is_mock
 
     # Priority 1: ONNX
-    onnx_path = artifact_path or ONNX_PATH
+    onnx_path = artifact_path or _onnx_path()
     if os.path.exists(onnx_path):
         try:
             import onnxruntime as ort

@@ -272,15 +272,19 @@ class TestAnemiaCVOnnxPath:
         anemia_inf._is_mock = True
 
     def test_anemia_model_path_points_to_v2_real(self):
-        from app.models.anemia_cv.inference import ONNX_PATH
-        assert "v2_real" in os.path.basename(ONNX_PATH), (
-            f"ONNX_PATH must reference v2_real artifact, got {ONNX_PATH}"
+        from app.models.anemia_cv.inference import _onnx_path
+        # Resolve via lazy loader — must reference v2_real artifact
+        resolved = _onnx_path()
+        assert "v2_real" in os.path.basename(resolved), (
+            f"ONNX path must reference v2_real artifact, got {resolved}"
         )
 
     def test_anemia_model_falls_back_to_mock_when_artifact_missing(self, monkeypatch):
         from app.models.anemia_cv import inference as anemia_inf
         # Force ONNX + Keras paths to be missing
-        monkeypatch.setattr(anemia_inf, "ONNX_PATH", "/nonexistent/v2_real.onnx")
+        monkeypatch.setattr(
+            anemia_inf, "_onnx_path", lambda: "/nonexistent/v2_real.onnx"
+        )
         monkeypatch.setattr(anemia_inf, "KERAS_PATH", "/nonexistent/mobilenet.keras")
         anemia_inf.load_model()
         assert anemia_inf.is_mock_mode() is True

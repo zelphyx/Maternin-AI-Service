@@ -23,16 +23,29 @@ logger = logging.getLogger("maternin.ai.agent.nutrition")
 _tkpi_data: list[dict] | None = None
 
 
+def _tkpi_path() -> str:
+    """
+    Resolve path ke TKPI nutrition CSV.
+    Production (HF Space): MATERIN_DATA_DIR/nutrition/<file>
+    Dev (local): ../../../datasets/tkpi_nutrition/<file>
+    """
+    base = os.environ.get("MATERIN_DATA_DIR")
+    filename = "tkpi_indonesian_food_master_300.csv"
+    if base:
+        return os.path.join(base, "nutrition", filename)
+    return os.path.join(
+        os.path.dirname(__file__), "..", "..", "..", "datasets",
+        "tkpi_nutrition", filename
+    )
+
+
 def _load_tkpi() -> list[dict]:
     """Load TKPI Indonesian food database."""
     global _tkpi_data
     if _tkpi_data is not None:
         return _tkpi_data
 
-    tkpi_path = os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "datasets",
-        "tkpi_nutrition", "tkpi_indonesian_food_master_300.csv"
-    )
+    tkpi_path = _tkpi_path()
 
     _tkpi_data = []
     try:
