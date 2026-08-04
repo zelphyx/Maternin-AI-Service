@@ -1,0 +1,68 @@
+# ──────────────────────────────────────────────────────────────────────
+# MaternIn AI — root-level Docker excludes
+# (Context = repo root when Dokploy builds with `-f Dockerfile .`)
+# ──────────────────────────────────────────────────────────────────────
+
+# VCS / OS noise
+.git/
+.gitignore
+.gitattributes
+.DS_Store
+Thumbs.db
+
+# Local env / secrets
+.env
+.env.local
+.env.*.local
+
+# Documentation (not part of runtime image)
+docs/
+prd-*.md
+*.md
+
+# Datasets — chat KB + nutrition CSV live here in dev, but get downloaded
+# from Hugging Face Hub at runtime in deploy. Exclude both.
+datasets/
+
+# Python build / cache artifacts
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+**/*.pyd
+**/.pytest_cache/
+**/.ruff_cache/
+**/.mypy_cache/
+**/*.egg-info/
+**/dist/
+**/build/
+
+# Virtual envs (dev only)
+**/.venv/
+**/venv/
+
+# ── ai-service-specific excludes ───────────────────────────────────────
+
+# ai-service/.env is in .gitignore but be explicit here too
+ai-service/.env
+ai-service/.env.local
+
+# Training scripts + helpers (not used at runtime)
+ai-service/app/training/
+ai-service/scripts/
+
+# Tests (not part of runtime image)
+ai-service/tests/
+ai-service/datasets/
+ai-service/docs/
+
+# Model artifacts (~125 MB, fetched from HF Hub at runtime)
+ai-service/app/model_artifacts/
+
+# IDE / editor
+.idea/
+.vscode/
+*.swp
+
+# Logs
+*.log
+logs/

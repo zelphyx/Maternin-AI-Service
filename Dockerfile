@@ -1,18 +1,26 @@
 # ──────────────────────────────────────────────────────────────────────
-# MaternIn AI Service — Dockerfile (Hugging Face Space, Docker SDK)
+# MaternIn AI Service — Dockerfile (Dokploy / generic Docker)
 # ──────────────────────────────────────────────────────────────────────
-# Multi-stage plan:
-#   1. python:3.11-slim base + system deps (libgl, ffmpeg for OpenCV/MediaPipe)
-#   2. Install Python deps in cached layer (only re-run if requirements.txt changes)
-#   3. Copy source code (model artifacts are downloaded from HF Hub at runtime)
+# Context path = repo root (Maternin-AI/).
+# Build trigger: `docker build -f Dockerfile .`
 #
-# Build context = ai-service/ (the Dockerfile sits at the ai-service root).
-# Push mechanism: `git push hf main` from ai-service/ → builds Space automatically.
+# Structure assumed:
+#   .
+#   ├── Dockerfile           ← you are here
+#   ├── .dockerignore
+#   ├── ai-service/
+#   │   ├── requirements.txt
+#   │   ├── conftest.py
+#   │   └── app/             ← application source
+#   └── datasets/            ← runtime data (chatbot KB + nutrition CSV)
+#
+# Note: model artifacts (~125 MB) are NOT bundled. They download from
+# Hugging Face Hub on first container start via `huggingface_hub`.
 # ──────────────────────────────────────────────────────────────────────
 
-FROM python:3.11-slim AS base
+FROM python:3.11-slim
 
-# System dependencies for OpenCV, MediaPipe, ONNX Runtime
+# System deps for OpenCV, MediaPipe, ONNX Runtime
 RUN apt-get update && apt-get install -y --no-install-recommends \
         libgl1 \
         libglib2.0-0 \
@@ -24,14 +32,14 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 WORKDIR /app
 
 # ── Python dependencies (cached layer) ──────────────────────────────────
-COPY requirements.txt .
+COPY ai-service/requirements.txt ./requirements.txt
 RUN pip install --no-cache-dir --upgrade pip \
     && pip install --no-cache-dir -r requirements.txt \
     && pip install --no-cache-dir "huggingface_hub>=0.24.0,<1.0.0"
 
-# ── Application code ────────────────────────────────────────────────────
-COPY app/ ./app/
-COPY conftest.py ./
+# ── Application source ──────────────────────────────────────────────────
+COPY ai-service/app/ ./app/
+COPY ai-service/conftest.py ./conftest.py
 
 # ── Runtime configuration ───────────────────────────────────────────────
 ENV OMP_NUM_THREADS=2 \
@@ -41,14 +49,12 @@ ENV OMP_NUM_THREADS=2 \
     HF_HUB_CACHE=/app/.cache/hub \
     MATERIN_DATA_DIR=/app/data
 
-# Hugging Face Spaces expects port 7860
 EXPOSE 7860
 
-# Lightweight health check — uvicorn process stays responsive
+# Health check — Dokploy / load balancer pings this
 HEALTHCHECK --interval=60s --timeout=5s --retries=3 \
     CMD curl -fsS http://localhost:7860/health || exit 1
 
-# Single worker is intentional: HF Space CPU basic = 2 vCPU shared, multiple
-# workers + GIL contention hurts more than it helps. concurrency comes from
-# async/await inside uvicorn event loop (FastAPI handlers).
-CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port 7860 --workers 1 --timeout-keep-alive 60"]
+# Single worker is intentional: avoids GIL contention on small VPS.
+# ${PORT:-7860} → Dokploy sets $PORT; HF Space / local uses 7860.
+CMD ["sh", "-c", "uvicorn app.main:app --host 0.0.0.0 --port ${PORT:-7860} --workers 1 --timeout-keep-alive 60"]
