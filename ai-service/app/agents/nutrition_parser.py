@@ -24,19 +24,10 @@ _tkpi_data: list[dict] | None = None
 
 
 def _tkpi_path() -> str:
-    """
-    Resolve path ke TKPI nutrition CSV.
-    Production (HF Space): MATERIN_DATA_DIR/nutrition/<file>
-    Dev (local): ../../../datasets/tkpi_nutrition/<file>
-    """
-    base = os.environ.get("MATERIN_DATA_DIR")
-    filename = "tkpi_indonesian_food_master_300.csv"
-    if base:
-        return os.path.join(base, "nutrition", filename)
-    return os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "datasets",
-        "tkpi_nutrition", filename
-    )
+    """Resolve path to TKPI nutrition CSV (container: /app/datasets/, dev: repo/datasets/)."""
+    from app.core.artifact_loader import ensure_runtime_data
+    base = ensure_runtime_data()
+    return str(base / "tkpi_nutrition" / "tkpi_indonesian_food_master_300.csv")
 
 
 def _load_tkpi() -> list[dict]:

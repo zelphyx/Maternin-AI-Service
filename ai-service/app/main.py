@@ -46,7 +46,6 @@ async def lifespan(app: FastAPI):
     from app.core.artifact_loader import ensure_model_artifacts, ensure_runtime_data
     ensure_model_artifacts()
     data_dir = ensure_runtime_data()
-    os.environ["MATERIN_DATA_DIR"] = str(data_dir)
     logger.info(f"   Runtime data dir:   {data_dir}")
 
     # ── Load ML models ke memori ─────────────────────────────────────

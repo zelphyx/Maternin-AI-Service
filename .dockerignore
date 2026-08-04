@@ -52,11 +52,7 @@ ai-service/scripts/
 
 # Tests (not part of runtime image)
 ai-service/tests/
-ai-service/datasets/
 ai-service/docs/
-
-# Model artifacts (~125 MB, fetched from HF Hub at runtime)
-ai-service/app/model_artifacts/
 
 # IDE / editor
 .idea/

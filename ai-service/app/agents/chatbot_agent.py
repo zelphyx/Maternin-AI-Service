@@ -69,19 +69,10 @@ _grounding_knowledge: str | None = None
 
 
 def _kb_path() -> str:
-    """
-    Resolve path ke KB Kemenkes JSON.
-    Production (HF Space): MATERIN_DATA_DIR/kb/<file>
-    Dev (local): ../../../datasets/buku_kia_kemenkes/<file>
-    """
-    base = os.environ.get("MATERIN_DATA_DIR")
-    filename = "maternal_health_qa_kemenkes_500.json"
-    if base:
-        return os.path.join(base, "kb", filename)
-    return os.path.join(
-        os.path.dirname(__file__), "..", "..", "..", "datasets",
-        "buku_kia_kemenkes", filename
-    )
+    """Resolve path to KB Kemenkes JSON (container: /app/datasets/, dev: repo/datasets/)."""
+    from app.core.artifact_loader import ensure_runtime_data
+    base = ensure_runtime_data()
+    return str(base / "buku_kia_kemenkes" / "maternal_health_qa_kemenkes_500.json")
 
 
 def _load_grounding_kb() -> str:
