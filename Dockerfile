@@ -37,7 +37,9 @@ RUN pip install --no-cache-dir --upgrade pip \
 # Application + bundled artifacts
 COPY ai-service/app/ ./app/
 COPY ai-service/conftest.py ./conftest.py
-COPY datasets/ ./datasets/
+# Runtime data (chatbot KB + nutrition CSV — 300 KB total)
+COPY datasets/buku_kia_kemenkes/ ./datasets/buku_kia_kemenkes/
+COPY datasets/tkpi_nutrition/     ./datasets/tkpi_nutrition/
 
 ENV OMP_NUM_THREADS=2 \
     MKL_NUM_THREADS=2 \

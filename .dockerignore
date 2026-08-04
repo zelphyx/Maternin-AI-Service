@@ -20,7 +20,13 @@ docs/
 prd-*.md
 *.md
 
-# Datasets — included in image (chatbot KB + nutrition CSV for runtime)
+# Training data (not needed in container — 2+ GB)
+datasets/anemia_real/
+datasets/anemia_conjunctiva/
+datasets/maternal_health_risk/
+datasets/real_datasets/
+datasets/*.zip
+datasets/*.tar.gz
 
 # Python build / cache artifacts
 **/__pycache__/
