@@ -20,9 +20,7 @@ docs/
 prd-*.md
 *.md
 
-# Datasets — chat KB + nutrition CSV live here in dev, but get downloaded
-# from Hugging Face Hub at runtime in deploy. Exclude both.
-datasets/
+# Datasets — included in image (chatbot KB + nutrition CSV for runtime)
 
 # Python build / cache artifacts
 **/__pycache__/
