@@ -6,13 +6,11 @@ __pycache__/
 *.egg-info/
 dist/
 build/
+*.onnx.data
+*.pkl.bak
+*.pkl.broken
 .venv/
 venv/
-app/model_artifacts/*.pkl
-app/model_artifacts/*.onnx
-app/model_artifacts/*.tflite
-app/model_artifacts/*.pt
-app/model_artifacts/*.onnx.data
 tasks-ai-service/
 # All Markdown files
 *.md

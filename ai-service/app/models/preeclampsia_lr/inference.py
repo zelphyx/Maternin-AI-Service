@@ -25,6 +25,45 @@ _model_loaded = False
 ARTIFACT_FILENAME = "preeclampsia_lr_v1.pkl"
 
 
+class CalibratedVotingClassifier:
+    """
+    Wrap VotingClassifier + IsotonicRegression calibration.
+
+    Workflow:
+      - Base ensemble (LR + GBT) trained on full train fold
+      - Calibration (IsotonicRegression) fitted on val fold
+        (out-of-fold predictions → monotonic calibration curve)
+
+    Inference: predict_proba(X) → ensemble → isotonic calibration
+
+    Attrs:
+      base_model: VotingClassifier fitted
+      calibrator: IsotonicRegression fitted (only on positive class)
+    """
+
+    def __init__(self, base_model, calibrator):
+        self.base_model = base_model
+        self.calibrator = calibrator
+
+    def predict_proba(self, X):
+        """Apply base ensemble, then isotonic calibration on P(class=1)."""
+        raw_proba = self.base_model.predict_proba(X)
+        raw_pos = raw_proba[:, 1]
+        cal_pos = self.calibrator.predict(raw_pos)
+        cal_pos = np.clip(cal_pos, 0.0, 1.0)
+        cal_neg = 1.0 - cal_pos
+        return np.column_stack([cal_neg, cal_pos])
+
+    def predict(self, X, threshold: float = 0.5):
+        proba = self.predict_proba(X)
+        return (proba[:, 1] >= threshold).astype(int)
+
+    @classmethod
+    def from_dict(cls, state: dict) -> "CalibratedVotingClassifier":
+        """Unpack artifact dict (v2) into class instance. For backward compat."""
+        return cls(base_model=state["ensemble"], calibrator=state["calibrator"])
+
+
 def _artifact_path() -> str:
     """
     Return path ke .pkl preeclampsia LR model.
@@ -139,9 +178,19 @@ def load_model(artifact_path: str | None = None) -> None:
 
     try:
         import joblib
-        _pipeline = joblib.load(path)
+        state = joblib.load(path)
+        # Support both new dict format (v2) and old Pipeline format (v1)
+        if isinstance(state, dict) and "ensemble" in state:
+            # v2: CalibratedVotingClassifier serialized as dict
+            _pipeline = CalibratedVotingClassifier(
+                base_model=state["ensemble"],
+                calibrator=state["calibrator"],
+            )
+        else:
+            # v1: raw Pipeline (original LR artifact)
+            _pipeline = state
         _model_loaded = True
-        logger.info(f"✅ Preeclampsia LR model loaded from {path}")
+        logger.info(f"✅ Preeclampsia LR model loaded from {path} ({type(_pipeline).__name__})")
     except Exception as exc:
         logger.error(f"Failed to load preeclampsia model: {exc}")
         _model_loaded = False

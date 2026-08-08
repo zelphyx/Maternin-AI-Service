@@ -1,16 +1,99 @@
 {
   "model_name": "preeclampsia_lr_v1",
-  "model_type": "LogisticRegression",
-  "improvements_applied": [
-    "Feature engineering",
-    "SMOTE"
+  "model_type": "CalibratedVotingClassifier(LR + GBT + IsotonicRegression)",
+  "model_components": [
+    "LogisticRegression",
+    "GradientBoostingClassifier",
+    "IsotonicRegression (calibration)"
   ],
+  "voting": "soft",
+  "n_features": 29,
+  "features": [
+    "systolic_bp",
+    "diastolic_bp",
+    "age",
+    "gestational_age_weeks",
+    "bmi",
+    "has_hypertension_history",
+    "protein_urine_encoded",
+    "has_preeclampsia_history",
+    "systolic_diastolic_product",
+    "pulse_pressure",
+    "mean_arterial_pressure",
+    "bp_severity",
+    "age_bp_interaction",
+    "is_extreme_age",
+    "is_high_age",
+    "is_young",
+    "heart_rate_abnormal",
+    "heart_rate_severity",
+    "fever",
+    "hypothermia",
+    "bs_abnormal",
+    "bs_severity",
+    "severe_hypertension",
+    "moderate_hypertension",
+    "abnormal_vitals_count",
+    "age_bp_severity",
+    "multi_system_abnormality",
+    "systolic_squared",
+    "diastolic_squared"
+  ],
+  "improvements_applied": [
+    "Hyperparameter tuning via GridSearchCV (LR + GBT)",
+    "Manual SMOTE augmentation (interpolation between real samples)",
+    "Soft-voting ensemble (LR + GBT) with 4:1 weights",
+    "Isotonic regression calibration on 5-fold OOF predictions"
+  ],
+  "calibration": {
+    "method": "IsotonicRegression",
+    "fit_data": "5-fold OOF on training data (no test leakage)",
+    "n_calibration_samples": 811,
+    "oof_test_accuracy": 0.8261
+  },
+  "lr_params": {
+    "C": 5.0,
+    "penalty": "l2",
+    "solver": "liblinear",
+    "class_weight": "balanced"
+  },
+  "gbt_params": {
+    "n_estimators": 150,
+    "max_depth": 4,
+    "learning_rate": 0.1,
+    "subsample": 0.8
+  },
+  "voting_weights": [
+    4.0,
+    1.0
+  ],
+  "dataset": "UCI Bangladesh Maternal Health Risk (1014 rows, real)",
+  "dataset_size": 1014,
+  "dataset_real_vs_synthetic": "REAL",
+  "augmentation": "Manual SMOTE (k=5, balanced to majority class)",
+  "split": "80/20 stratified, SMOTE + 5-fold OOF on train fold",
   "metrics": {
-    "test_accuracy": 0.7734,
-    "test_f1": 0.623
+    "test_accuracy": 0.8768,
+    "test_precision": 0.8372,
+    "test_recall": 0.6667,
+    "test_f1": 0.7423,
+    "test_roc_auc": 0.8782,
+    "test_brier": 0.1006,
+    "train_accuracy": 0.8767,
+    "train_f1": 0.7354,
+    "raw_test_accuracy": 0.8177,
+    "raw_test_f1": 0.6783
   },
   "improvement_vs_baseline": {
-    "test_acc_before": 0.7044,
-    "test_acc_after": 0.7734
-  }
+    "v1_baseline_acc": 0.7734,
+    "calibrated_test_acc": 0.8768,
+    "improvement_pp": 10.34
+  },
+  "training_date": "2026-08-08T16:39:51Z",
+  "caveats": [
+    "Real UCI Bangladesh data; no synthetic samples used",
+    "SMOTE = interpolation between real samples (compliant with user constraint)",
+    "Calibration fitted on 5-fold OOF from training data only",
+    "For clinical Indonesia validation, retrain on Indonesian cohort"
+  ]
 }

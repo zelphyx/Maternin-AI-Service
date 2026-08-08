@@ -98,6 +98,29 @@ def aggregate_risk(
     Jika model XGBoost tersedia: inferensi asli + feature importance.
     Jika tidak: fallback ke weighted heuristic.
     """
+    if _model_loaded and _model_bundle is not None:
+        return _predict_with_model(
+            triage_score, preeclampsia_prob, anemia_prob,
+            age, gestational_age_weeks, systolic_bp, diastolic_bp, hemoglobin_g_dl,
+            is_absolute_red,
+        )
+    else:
+        return _predict_heuristic(
+            triage_score, preeclampsia_prob, anemia_prob,
+            is_absolute_red=is_absolute_red,
+        )
+
+
+def _predict_with_model(
+    triage_score, preeclampsia_prob, anemia_prob,
+    age, gestational_age_weeks, systolic_bp, diastolic_bp, hemoglobin_g_dl,
+    is_absolute_red,
+) -> dict[str, Any]:
+    """Inferensi menggunakan model XGBoost yang sudah di-train.
+
+    Model baru dilatih dengan 29 fitur engineered (lihat training script
+    risk_aggregator_improved.py). Fitur di-engineer dari input klinis.
+    """
     # Absolute red flag dari lapis 1 → langsung merah
     if is_absolute_red:
         aggregate = max(triage_score, BADGE_THRESHOLDS["merah"])
@@ -107,26 +130,6 @@ def aggregate_risk(
             "feature_importances": None,
         }
 
-    if _model_loaded and _model_bundle is not None:
-        return _predict_with_model(
-            triage_score, preeclampsia_prob, anemia_prob,
-            age, gestational_age_weeks, systolic_bp, diastolic_bp, hemoglobin_g_dl,
-        )
-    else:
-        return _predict_heuristic(
-            triage_score, preeclampsia_prob, anemia_prob,
-        )
-
-
-def _predict_with_model(
-    triage_score, preeclampsia_prob, anemia_prob,
-    age, gestational_age_weeks, systolic_bp, diastolic_bp, hemoglobin_g_dl,
-) -> dict[str, Any]:
-    """Inferensi menggunakan model XGBoost yang sudah di-train.
-
-    Model baru dilatih dengan 29 fitur engineered (lihat training script
-    risk_aggregator_improved.py). Fitur di-engineer dari input klinis.
-    """
     model = _model_bundle["model"]
     label_encoder = _model_bundle["label_encoder"]
     feature_columns = _model_bundle["feature_columns"]
@@ -268,9 +271,18 @@ def _engineer_xgb_features(
 
 
 def _predict_heuristic(
-    triage_score, preeclampsia_prob, anemia_prob,
+    triage_score, preeclampsia_prob, anemia_prob, is_absolute_red=False,
 ) -> dict[str, Any]:
     """Fallback heuristik jika model belum tersedia."""
+    # Absolute red flag dari lapis 1 → langsung merah
+    if is_absolute_red:
+        aggregate = max(triage_score, BADGE_THRESHOLDS["merah"])
+        return {
+            "aggregate_score": round(min(aggregate, 100.0), 1),
+            "risk_badge": RiskBadge.merah,
+            "feature_importances": None,
+        }
+
     preeclampsia_scaled = (preeclampsia_prob or 0.0) * 100.0
     anemia_scaled = (anemia_prob or 0.0) * 100.0
 

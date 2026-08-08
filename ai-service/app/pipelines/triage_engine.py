@@ -94,6 +94,8 @@ async def run_triage_pipeline(
         preeclampsia_prob=preeclampsia_prob,
         anemia_prob=anemia_prob,
         is_absolute_red=triage_result.is_absolute_red,
+        systolic_bp=anc.get("systolic") or 120.0,
+        diastolic_bp=anc.get("diastolic") or 80.0,
     )
     logger.info(
         f"  Aggregator result: score={aggregation['aggregate_score']}, "

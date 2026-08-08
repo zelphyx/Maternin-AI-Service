@@ -13,15 +13,29 @@ class Settings(BaseSettings):
     """Konfigurasi utama AI Service — semua variabel sensitif wajib dari .env."""
 
     # --- API Keys ---
-    groq_api_key: str = Field(
-        ...,
-        min_length=1,
-        description="API key untuk GROQ LLM (wajib)",
+    ai_api_key: str = Field(
+        default="",
+        description="API key untuk AI LLM (wajib jika AI enabled)",
+    )
+    ai_api_base_url: str = Field(
+        default="https://labs.inxorastudio.com/v1",
+        description="Base URL untuk AI LLM API (OpenAI-compatible)",
+    )
+    ai_model: str = Field(
+        default="ixlabs/gpt-5.6-luna",
+        description="Model name untuk AI LLM",
+    )
+    ai_timeout_seconds: int = Field(
+        default=25,
+        description="Timeout untuk request AI LLM (detik)",
+    )
+    ai_max_retries: int = Field(
+        default=2,
+        description="Max retry untuk AI LLM request",
     )
     fonnte_api_key: str = Field(
-        ...,
-        min_length=1,
-        description="API key untuk Fonnte WhatsApp (wajib, khusus alert darurat)",
+        default="",
+        description="API key untuk Fonnte WhatsApp (opsional, khusus alert darurat)",
     )
 
     # --- Inter-Service Auth ---
@@ -66,6 +80,7 @@ class Settings(BaseSettings):
         "env_file": ".env",
         "env_file_encoding": "utf-8",
         "case_sensitive": False,
+        "extra": "ignore",
     }
 
 
